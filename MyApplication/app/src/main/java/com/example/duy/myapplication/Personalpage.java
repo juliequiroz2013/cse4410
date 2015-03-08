@@ -1,33 +1,24 @@
 package com.example.duy.myapplication;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
-public class MainActivity extends ActionBarActivity {
-    Button b;
+
+public class Personalpage extends ActionBarActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        b = (Button) findViewById(R.id.button3);
-    }
-    public void doSomething(View v){
-        Intent i = new Intent(this,Personalpage.class);
-        startActivity(i);
-
+        setContentView(R.layout.activity_personalpage);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_personalpage, menu);
         return true;
     }
 
