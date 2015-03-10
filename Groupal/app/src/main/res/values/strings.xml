@@ -5,4 +5,9 @@
     <string name="title_activity_display_message">DisplayMessageActivity</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_calendar_view">CalendarView</string>
+    <string name="title_activity_calendar_adapter">CalendarAdapter</string>
+    <string name="title_activity_people">PeopleActivity</string>
+    <string name="title_activity_personal_page">PersonalPage</string>
 </resources>

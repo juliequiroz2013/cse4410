@@ -1,29 +1,50 @@
 package com.example.david.groupal;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import android.app.Activity;
+import android.app.Fragment;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
+import android.view.ViewGroup;
+import android.widget.TextView;
 
+import com.example.david.groupal.CalendarView.OnDispatchDateSelectListener;
 
-public class MainActivity extends ActionBarActivity {
-    public final static String EXTRA_MESSAGE = "com.example.david.groupal.MESSAGE";
-
+public class MainActivity extends Activity implements OnDispatchDateSelectListener{
+    private TextView 			mTextDate;
+    private SimpleDateFormat 	mFormat;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        /*// Get the message from the intent
+        Intent intent = getIntent();
+        String message = intent.getStringExtra(LoginActivity.EXTRA_MESSAGE);
+
+        // Create the text view
+        TextView textView = new TextView(this);
+        textView.setTextSize(40);
+        textView.setText(message);
+
+        // Set the text view as the activity layout
+        setContentView(textView);*/
+
+        mTextDate=(TextView)findViewById(R.id.display_date);
+
+        mFormat = new SimpleDateFormat("EEEE d MMMM yyyy");
+
+        ((CalendarView) findViewById(R.id.calendar)).setOnDispatchDateSelectListener(this);
     }
 
-
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+    public void onDispatchDateSelect(Date date) {
+        mTextDate.setText(mFormat.format(date));
     }
 
     @Override
@@ -32,21 +53,25 @@ public class MainActivity extends ActionBarActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
-    public void confirmLogin(View view) {
-        // Do something in response to button
-        Intent intent = new Intent(this, DisplayMessageActivity.class);
-        EditText editText = (EditText) findViewById(R.id.input_email);
-        String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
-        startActivity(intent);
+    /**
+     * A placeholder fragment containing a simple view.
+     */
+    public static class PlaceholderFragment extends Fragment {
+
+        public PlaceholderFragment() { }
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.fragment_display_message,
+                    container, false);
+            return rootView;
+        }
     }
 }
