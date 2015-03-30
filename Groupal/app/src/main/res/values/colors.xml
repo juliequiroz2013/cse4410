@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_text_color">#ffffff</color>
+    <color name="login_text_color">#ffffff</color>
+    <color name="actionbar_background_color">#669900</color>
+    <color name="app_background_color">#99CC00</color>
+</resources>
