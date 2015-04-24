@@ -9,7 +9,7 @@
     <FrameLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@color/app_background_color"
+        android:background="@color/actionbar_background_color"
         >
         <Button
             android:id="@+id/calendar_arrow_left"
@@ -48,6 +48,6 @@
         android:stretchMode="columnWidth"
         android:gravity="center"
         android:listSelector="@null"
-        android:background="@color/app_background_color"
+        android:background="@color/actionbar_background_color"
         />
 </LinearLayout>

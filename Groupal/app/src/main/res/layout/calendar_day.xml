@@ -5,18 +5,18 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@color/app_background_color"
+    android:background="@color/actionbar_background_color"
     >
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tv_day"
-        android:background="@null"
+        android:background="@color/actionbar_background_color"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tv_number"
-        android:background="@null"
+        android:background="@color/actionbar_background_color"
         />
 </LinearLayout>
