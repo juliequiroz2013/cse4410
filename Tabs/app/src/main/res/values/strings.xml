@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tabs</string>
+
+
+    <string name="title_section1">Friends</string>
+    <string name="title_section2">Groups</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

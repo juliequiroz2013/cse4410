@@ -10,4 +10,5 @@
     <string name="title_activity_calendar_adapter">CalendarAdapter</string>
     <string name="title_activity_people">PeopleActivity</string>
     <string name="title_activity_personal_page">PersonalPage</string>
+    <string name="title_activity_calender_view">CalenderViewActivity</string>
 </resources>
