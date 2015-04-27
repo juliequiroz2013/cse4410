@@ -103,15 +103,18 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
     public void onTabSelected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
         // When the given tab is selected, switch to the corresponding page in
         // the ViewPager.
+        //show the given tab
         mViewPager.setCurrentItem(tab.getPosition());
     }
 
     @Override
     public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
+        //hide the given tab
     }
 
     @Override
     public void onTabReselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
+        //probably ignore this event
     }
 
     /**
@@ -126,6 +129,17 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
 
         @Override
         public Fragment getItem(int position) {
+//            switch (position){
+//                case 0:
+//                    return new Friends();
+//                    break;
+//
+//                case 1:
+//                    return new Groups();
+//                    break;
+//                default:
+//                    return null;
+//            }
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
             return PlaceholderFragment.newInstance(position + 1);
@@ -133,7 +147,7 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
+            // Show 2 total pages.
             return 2;
         }
 
