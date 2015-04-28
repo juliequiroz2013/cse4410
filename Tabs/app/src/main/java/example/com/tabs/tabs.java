@@ -129,21 +129,16 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
 
         @Override
         public Fragment getItem(int position) {
-//            switch (position){
-//                case 0:
-//                    return new Friends();
-//                    break;
-//
-//                case 1:
-//                    return new Groups();
-//                    break;
-//                default:
-//                    return null;
-//            }
+            switch (position){
+                case 0:
+                    return Friends.newInstance(position + 1);
+
+                case 1:
+                    return Groups.newInstance(position + 1);
+            }
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
-            return PlaceholderFragment.newInstance(position + 1);
-        }
+            return PlaceholderFragment.newInstance(position + 1);        }
 
         @Override
         public int getCount() {
