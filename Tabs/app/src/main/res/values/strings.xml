@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Groupal</string>
 
-
+    <string name="title_section0">My Calendar</string>
     <string name="title_section1">Friends</string>
     <string name="title_section2">Groups</string>
 

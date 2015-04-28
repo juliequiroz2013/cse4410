@@ -131,10 +131,14 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
         public Fragment getItem(int position) {
             switch (position){
                 case 0:
-                    return Friends.newInstance(position + 1);
+                    return myCalendar.newInstance(position + 1);
 
                 case 1:
+                    return Friends.newInstance(position + 1);
+
+                case 2:
                     return Groups.newInstance(position + 1);
+
             }
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
@@ -142,8 +146,8 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
 
         @Override
         public int getCount() {
-            // Show 2 total pages.
-            return 2;
+            // Show 3 total pages.
+            return 3;
         }
 
         @Override
@@ -151,8 +155,10 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
             Locale l = Locale.getDefault();
             switch (position) {
                 case 0:
-                    return getString(R.string.title_section1).toUpperCase(l);
+                    return getString(R.string.title_section0).toUpperCase(l);
                 case 1:
+                    return getString(R.string.title_section1).toUpperCase(l);
+                case 2:
                     return getString(R.string.title_section2).toUpperCase(l);
             }
             return null;
