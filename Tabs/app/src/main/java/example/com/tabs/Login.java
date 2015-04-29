@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 
 public class Login extends ActionBarActivity {
@@ -43,19 +44,43 @@ public class Login extends ActionBarActivity {
     }
 
     public void confirmLogin(View view){
-        // generate context
+        //  wrong username/password message
+        TextView textView = new TextView(this);
+        textView.setTextSize(40);
+        textView.setBackgroundColor(getResources().getColor(R.color.light_green));
+        textView.setTextColor(getResources().getColor(R.color.white));
+        textView.setText("Wrong Username or Password");
 
 
-        // Do something when button pressed
+        // check username and password
         //Intent intent = new Intent(this, tabs.class);
-        EditText editText = (EditText) findViewById(R.id.input_email);
-        String userName = editText.getText().toString();
+        EditText editTextUser = (EditText) findViewById(R.id.input_username);
+        String userName = editTextUser.getText().toString();
         //intent.putExtra(EXTRA_MESSAGE, message);
         //startActivity(intent);
+        if(!userName.equals("test"))
+        {
+             //  set text view as activity layout - wrong username
+            setContentView(textView);
+        }
+        else
+        {
+            // check password
+            EditText editTextPass = (EditText) findViewById(R.id.input_password);
+            String userPass = editTextPass.getText().toString();
 
-        // log user name
-        SharedPreferenceData.setUserName(this, userName);
-        // exit login
-        finish();
+            if(!userPass.equals("password"))
+            {
+                //  set text view as activity layout - wrong password
+                setContentView(textView);
+            }
+            else
+            {
+                // log user name
+                SharedPreferenceData.setUserName(this, userName);
+                // exit login
+                finish();
+            }
+        }
     }
 }

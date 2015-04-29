@@ -12,7 +12,7 @@
     <string name="action_logout">Log Out</string>
 
     <!-- login text -->
-    <string name="email_hint">Email Address</string>
+    <string name="username_hint">Username</string>
     <string name="password_hint">Password</string>
     <string name="send_button">Log Into Groupal</string>
 

@@ -9,4 +9,37 @@
     <style name="MyActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
         <item name="background">@color/dark_green</item>
     </style>
+
+    <!-- Caldroid Custom Theme -->
+    <style name="CaldroidCustomTheme" parent="CaldroidDefault">
+        <item name="styleCaldroidViewLayout">@style/CaldroidCustomThemeCalendarViewLayout</item>
+        <item name="styleCaldroidMonthName">@style/CaldroidCustomThemeMonthName</item>
+        <item name="styleCaldroidNormalCell">@style/CaldroidCustomThemeNormalCell</item>
+        <item name="styleCaldroidSquareCell">@style/CaldroidCustomThemeSquareCell</item>
+        <item name="styleCaldroidGridView">@style/CaldroidCustomThemeGridView</item>
+    </style>
+
+    <style name="CaldroidCustomThemeCalendarViewLayout">
+        <item name="android:background">@color/dark_green</item>
+    </style>
+
+    <style name="CaldroidCustomThemeMonthName" parent="CaldroidDefaultMonthName">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CaldroidCustomThemeNormalCell" parent="CaldroidCustomThemeCell">
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="CaldroidCustomThemeSquareCell" parent="CaldroidCustomThemeCell" />
+
+    <style name="CaldroidCustomThemeGridView" parent="CaldroidDefaultGridView">
+        <item name="android:background">@color/light_green</item>
+    </style>
+
+    <style name="CaldroidCustomThemeCell" parent="CaldroidDefaultCell">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/cell_bg_dark</item>
+    </style>
+
 </resources>

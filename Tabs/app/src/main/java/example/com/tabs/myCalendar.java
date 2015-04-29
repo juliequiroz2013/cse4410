@@ -4,9 +4,19 @@ import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.roomorama.caldroid.CaldroidFragment;
+import com.roomorama.caldroid.CaldroidListener;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 
 
 /*
@@ -18,6 +28,8 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
 */
 public class myCalendar extends android.support.v4.app.Fragment {
+    FragmentActivity myContext;
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -61,7 +73,29 @@ public class myCalendar extends android.support.v4.app.Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_my_calendar, container, false);
+        View rootView =  inflater.inflate(R.layout.fragment_my_calendar, container, false);
+
+        CaldroidFragment caldroidFragment = new CaldroidFragment();
+        Bundle args = new Bundle();
+        Calendar cal = Calendar.getInstance();
+        args.putInt(CaldroidFragment.MONTH, cal.get(Calendar.MONTH) + 1);
+        args.putInt(CaldroidFragment.YEAR, cal.get(Calendar.YEAR));
+        args.putInt(CaldroidFragment.THEME_RESOURCE, R.style.CaldroidCustomTheme);
+        caldroidFragment.setArguments(args);
+
+        FragmentManager fragManager = myContext.getSupportFragmentManager();
+
+        android.support.v4.app.FragmentTransaction t = fragManager.beginTransaction();
+
+        t.replace(R.id.myCalendar, caldroidFragment);
+        t.commit();
+
+        return rootView;
     }
 
+    @Override
+    public void onAttach(Activity activity) {
+        myContext=(FragmentActivity) activity;
+        super.onAttach(activity);
+    }
 }
