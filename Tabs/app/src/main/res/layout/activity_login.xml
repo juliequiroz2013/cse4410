@@ -1,0 +1,64 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/padding_default"
+    android:paddingRight="@dimen/padding_default"
+    android:paddingTop="@dimen/padding_default"
+    android:paddingBottom="@dimen/padding_default"
+    android:layout_margin="0dp"
+    android:background="@color/light_green"
+    tools:context="example.com.tabs.Login">
+
+    <TextView
+        android:id="@+id/groupalName"
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="?android:attr/actionBarSize"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_title_size" />
+
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/email_hint"
+        android:textColorHint="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/groupalName"
+        android:layout_alignStart="@+id/groupalName"
+        android:layout_alignRight="@+id/groupalName"
+        android:layout_alignEnd="@+id/groupalName" />
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_below="@+id/input_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/password_hint"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:layout_marginTop="@dimen/padding_default"
+        android:layout_alignLeft="@+id/groupalName"
+        android:layout_alignStart="@+id/groupalName"
+        android:layout_alignRight="@+id/groupalName"
+        android:layout_alignEnd="@+id/groupalName" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_below="@+id/input_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_button"
+        android:textColor="@color/white"
+        android:background="@color/dark_green"
+        android:paddingLeft="@dimen/padding_default"
+        android:paddingRight="@dimen/padding_default"
+        android:layout_marginTop="38dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="confirmLogin" />
+
+</RelativeLayout>
