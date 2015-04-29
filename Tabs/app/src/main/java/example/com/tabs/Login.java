@@ -1,5 +1,6 @@
 package example.com.tabs;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -42,12 +43,19 @@ public class Login extends ActionBarActivity {
     }
 
     public void confirmLogin(View view){
+        // generate context
+
+
         // Do something when button pressed
-        Intent intent = new Intent(this, tabs.class);
+        //Intent intent = new Intent(this, tabs.class);
         EditText editText = (EditText) findViewById(R.id.input_email);
-        String message = editText.getText().toString();
-        //intnet.putExtra(EXTRA_MESSAGE, message);
-        startActivity(intent);
+        String userName = editText.getText().toString();
+        //intent.putExtra(EXTRA_MESSAGE, message);
+        //startActivity(intent);
+
+        // log user name
+        SharedPreferenceData.setUserName(this, userName);
+        // exit login
         finish();
     }
 }

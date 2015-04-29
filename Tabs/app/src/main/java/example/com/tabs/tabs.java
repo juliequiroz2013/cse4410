@@ -2,6 +2,7 @@ package example.com.tabs;
 
 import java.util.Locale;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -38,6 +39,20 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // check for login --David
+        if(SharedPreferenceData.getUserName(tabs.this).length() == 0)
+        {
+            // call Login Activity
+            // Do something when button pressed
+            Intent intent = new Intent(this, Login.class);
+            startActivity(intent);
+        }
+        else
+        {
+            // Call Next Activity
+            // do nothing
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tabs);
 
@@ -94,6 +109,10 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        }
+        if (id == R.id.action_logout){
+            SharedPreferenceData.setUserName(this, "");
+            finish();
         }
 
         return super.onOptionsItemSelected(item);
