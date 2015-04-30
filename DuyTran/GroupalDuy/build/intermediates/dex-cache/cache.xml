@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Duy\AppData\Local\Android\sdk1\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\Duy\Documents\Android\cse4410-master\cse4410-master\Groupal\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-7f3a8d67b37db744f9b6b4b717d54bd98d50a98a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Duy\Documents\Android\cse4410-master\cse4410-master\Groupal\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="C:\Users\Duy\Documents\Android\cse4410-master\cse4410-master\Groupal\app\build\intermediates\pre-dexed\debug\classes-b02dc4bbea381f03efcd900c299d436e0af2e5df.jar" />
+    </item>
+    <item
+        jar="C:\Users\Duy\Documents\Android\cse4410-master\cse4410-master\Groupal\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\Duy\Documents\Android\cse4410-master\cse4410-master\Groupal\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-fdf40ac8c41532fcca5810a06c45891f1360214f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Duy\Documents\Android\cse4410-master\cse4410-master\Groupal\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\Duy\Documents\Android\cse4410-master\cse4410-master\Groupal\app\build\intermediates\pre-dexed\debug\classes-df8c6cc5ac1621212197e46d1c68a746cb044f76.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/actionbar_background_color"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_day"
+        android:background="@color/actionbar_background_color"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_number"
+        android:background="@color/actionbar_background_color"
+        />
+</LinearLayout><!-- From: file:/C:/Users/Duy/Documents/Android/cse4410-master/cse4410-master/Groupal/app/src/main/res/layout/calendar_day.xml -->
