@@ -1,46 +1,22 @@
 package example.com.tabs;
 
-
-import android.app.Activity;
+import android.content.Context;
+import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-//import android.app.Fragment;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import android.provider.ContactsContract.Contacts;
+import android.support.v4.app.ListFragment;
+import android.support.v4.app.LoaderManager.LoaderCallbacks;
+import android.support.v4.content.CursorLoader;
+import android.support.v4.content.Loader;
+import android.support.v4.widget.CursorAdapter;
+import android.support.v4.widget.SimpleCursorAdapter;
 
+public class Friends extends ListFragment implements LoaderCallbacks<Cursor> {
 
-/**
- * A simple {@link Fragment} subclass.
- */
-public class Friends extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-    /**
-     * The fragment argument representing the section number for this
-     * fragment.
-     */
-
+    private CursorAdapter mAdapter;
     private static final String ARG_SECTION_NUMBER = "section_number";
-    //private OnFragmentInteractionListener mListener;
 
-    /*
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment BreakfastFragment.
-     */
-    // TODO: Rename and change types and number of parameters
     public static Friends newInstance(int sectionNumber) {
         Friends fragment = new Friends();
         Bundle args = new Bundle();
@@ -49,17 +25,58 @@ public class Friends extends Fragment {
         return fragment;
     }
 
-    public Friends() {
-        // Required empty public constructor
-    }
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
+        // create adapter once
+        Context context = getActivity();
+        int layout = android.R.layout.simple_list_item_1;
+        Cursor c = null; // there is no cursor yet
+        int flags = 0; // no auto-requery! Loader requeries.
+        mAdapter = new SimpleCursorAdapter(context, layout, c, FROM, TO, flags);
+    }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_friends, container, false);
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+        // each time we are started use our listadapter
+        setListAdapter(mAdapter);
+        // and tell loader manager to start loading
+        getLoaderManager().initLoader(0, null, this);
     }
 
+    // columns requested from the database
+    private static final String[] PROJECTION = {
+            Contacts._ID, // _ID is always required
+            Contacts.DISPLAY_NAME_PRIMARY // that's what we want to display
+    };
 
+    // and name should be displayed in the text1 textview in item layout
+    private static final String[] FROM = { Contacts.DISPLAY_NAME_PRIMARY };
+    private static final int[] TO = { android.R.id.text1 };
+
+    @Override
+    public Loader<Cursor> onCreateLoader(int id, Bundle args) {
+
+        // load from the "Contacts table"
+        Uri contentUri = Contacts.CONTENT_URI;
+
+        // no sub-selection, no sort order, simply every row
+        // projection says we want just the _id and the name column
+        return new CursorLoader(getActivity(), contentUri, PROJECTION, null, null, null);
+    }
+
+    @Override
+    public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
+        // Once cursor is loaded, give it to adapter
+        mAdapter.swapCursor(data);
+    }
+
+    @Override
+    public void onLoaderReset(Loader<Cursor> loader) {
+        // on reset take any old cursor away
+        mAdapter.swapCursor(null);
+    }
 }

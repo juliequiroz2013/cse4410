@@ -7,8 +7,16 @@
 
     <string name="hello_world">Hello world!</string>
 
+    <!-- action button strings -->
     <string name="action_settings">Settings</string>
+    <string name="action_logout">Log Out</string>
 
-<!-- TODO: Remove or change this placeholder text -->
+    <!-- login text -->
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="send_button">Log Into Groupal</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">Login</string>
 </resources>

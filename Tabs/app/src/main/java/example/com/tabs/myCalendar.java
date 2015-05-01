@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.app.Fragment;
+<<<<<<< HEAD
+import android.support.v4.app.FragmentActivity;
+=======
+>>>>>>> master
 import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +19,14 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.roomorama.caldroid.CaldroidFragment;
+import com.roomorama.caldroid.CaldroidListener;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 
 import com.roomorama.caldroid.CaldroidFragment;
 import com.roomorama.caldroid.CaldroidListener;
@@ -86,6 +98,8 @@ public class myCalendar extends android.support.v4.app.Fragment {
         Calendar cal = Calendar.getInstance();
         args.putInt(CaldroidFragment.MONTH, cal.get(Calendar.MONTH) + 1);
         args.putInt(CaldroidFragment.YEAR, cal.get(Calendar.YEAR));
+<<<<<<< HEAD
+        args.putInt(CaldroidFragment.THEME_RESOURCE, R.style.CaldroidCustomTheme);
         caldroidFragment.setArguments(args);
 
         FragmentManager fragManager = myContext.getSupportFragmentManager();
@@ -97,6 +111,20 @@ public class myCalendar extends android.support.v4.app.Fragment {
 
         return rootView;
     }
+
+=======
+        caldroidFragment.setArguments(args);
+
+        FragmentManager fragManager = myContext.getSupportFragmentManager();
+
+        android.support.v4.app.FragmentTransaction t = fragManager.beginTransaction();
+
+        t.replace(R.id.myCalendar, caldroidFragment);
+        t.commit();
+
+        return rootView;
+    }
+>>>>>>> master
     @Override
     public void onAttach(Activity activity) {
         myContext=(FragmentActivity) activity;
