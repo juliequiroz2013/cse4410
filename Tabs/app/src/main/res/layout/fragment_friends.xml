@@ -7,10 +7,15 @@
     tools:context="example.com.tabs.Friends">
 
     <!-- TODO: Update blank fragment layout -->
+<<<<<<< HEAD
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="Fragment Friends" />
+=======
+    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+        android:text="" />
+>>>>>>> master
 
     <LinearLayout
         android:id="@+id/Friends"
