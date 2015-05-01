@@ -112,6 +112,7 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
         }
         if (id == R.id.action_logout){
             SharedPreferenceData.setUserName(this, "");
+            android.os.Process.killProcess(android.os.Process.myPid());
             finish();
         }
 

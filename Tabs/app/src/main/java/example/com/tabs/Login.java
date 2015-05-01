@@ -20,6 +20,13 @@ public class Login extends ActionBarActivity {
         setContentView(R.layout.activity_login);
     }
 
+    @Override
+    public void onBackPressed() {
+        // kill app if backed out from login page
+        android.os.Process.killProcess(android.os.Process.myPid());
+        //finish();
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
