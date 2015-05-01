@@ -50,7 +50,7 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
         else
         {
             // Call Next Activity
-            // do nothing
+            // do nothing, already logged in
         }
 
         super.onCreate(savedInstanceState);
