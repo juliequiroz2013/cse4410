@@ -19,4 +19,16 @@
         android:orientation="vertical" >
     </LinearLayout>
 
+    <!-- text view for list of friends -->
+    <TextView
+        android:id="@+id/listTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textSize="25dp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:background="@color/dark_green"
+        android:text="List Text View"
+        />
+
 </FrameLayout>

@@ -28,6 +28,13 @@
                 android:value=".tabs"/>
         </activity>
 
+        <activity
+            android:name=".About" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs"/>
+        </activity>
+
     </application>
 
 </manifest>

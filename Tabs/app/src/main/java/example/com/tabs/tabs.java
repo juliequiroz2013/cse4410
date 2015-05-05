@@ -115,6 +115,10 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
             android.os.Process.killProcess(android.os.Process.myPid());
             finish();
         }
+        if (id == R.id.action_about) {
+            Intent newInt1 = new Intent(this, About.class);
+            startActivity(newInt1);
+        }
 
         return super.onOptionsItemSelected(item);
     }

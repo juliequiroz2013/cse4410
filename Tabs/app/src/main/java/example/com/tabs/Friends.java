@@ -11,6 +11,7 @@ import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
 import android.support.v4.widget.CursorAdapter;
 import android.support.v4.widget.SimpleCursorAdapter;
+import android.view.View;
 
 public class Friends extends ListFragment implements LoaderCallbacks<Cursor> {
 
@@ -32,7 +33,7 @@ public class Friends extends ListFragment implements LoaderCallbacks<Cursor> {
         // create adapter once
         Context context = getActivity();
         //int layout = android.R.layout.simple_list_item_1;
-        int layout = R.layout.friends_text_view;
+        int layout = R.layout.fragment_friends;
         Cursor c = null; // there is no cursor yet
         int flags = 0; // no auto-requery! Loader requeries.
         mAdapter = new SimpleCursorAdapter(context, layout, c, FROM, TO, flags);
@@ -81,5 +82,9 @@ public class Friends extends ListFragment implements LoaderCallbacks<Cursor> {
     public void onLoaderReset(Loader<Cursor> loader) {
         // on reset take any old cursor away
         mAdapter.swapCursor(null);
+    }
+
+    public void tempClick(View viewThis){
+        // do something
     }
 }
