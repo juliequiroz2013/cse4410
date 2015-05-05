@@ -53,7 +53,7 @@ public class Login extends ActionBarActivity {
     public void confirmLogin(View view){
         //  wrong username/password message
         TextView textView = new TextView(this);
-        textView.setTextSize(40);
+        textView.setTextSize(30);
         textView.setBackgroundColor(getResources().getColor(R.color.light_green));
         textView.setTextColor(getResources().getColor(R.color.white));
         textView.setText("Wrong Username or Password");
