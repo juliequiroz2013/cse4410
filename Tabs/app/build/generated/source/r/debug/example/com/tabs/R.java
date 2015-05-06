@@ -1618,8 +1618,10 @@ containing a value of this type.
         public static final int right_arrow=0x7f020045;
     }
     public static final class id {
-        public static final int Friends=0x7f09005f;
-        public static final int action_about=0x7f090064;
+        public static final int Friends=0x7f090068;
+        public static final int Reg_email=0x7f090059;
+        public static final int Reg_password=0x7f09005b;
+        public static final int action_about=0x7f09006d;
         public static final int action_bar=0x7f090040;
         public static final int action_bar_activity_content=0x7f090000;
         public static final int action_bar_container=0x7f09003f;
@@ -1628,25 +1630,26 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f090024;
         public static final int action_bar_title=0x7f090023;
         public static final int action_context_bar=0x7f090041;
-        public static final int action_logout=0x7f090065;
+        public static final int action_logout=0x7f09006f;
         public static final int action_menu_divider=0x7f090002;
         public static final int action_menu_presenter=0x7f090003;
         public static final int action_mode_bar=0x7f09003d;
         public static final int action_mode_bar_stub=0x7f09003c;
         public static final int action_mode_close_button=0x7f090025;
-        public static final int action_settings=0x7f090066;
+        public static final int action_settings=0x7f09006e;
         public static final int activity_chooser_view_content=0x7f090026;
         public static final int alertTitle=0x7f090030;
         public static final int always=0x7f090016;
         public static final int beginning=0x7f090013;
         public static final int button=0x7f090056;
         public static final int buttonPanel=0x7f090036;
-        public static final int calendar_gridview=0x7f09005e;
-        public static final int calendar_left_arrow=0x7f090059;
-        public static final int calendar_month_year_textview=0x7f09005a;
-        public static final int calendar_right_arrow=0x7f09005b;
-        public static final int calendar_title_view=0x7f090058;
-        public static final int calendar_tv=0x7f090063;
+        public static final int buttonRegister=0x7f090057;
+        public static final int calendar_gridview=0x7f090067;
+        public static final int calendar_left_arrow=0x7f090062;
+        public static final int calendar_month_year_textview=0x7f090063;
+        public static final int calendar_right_arrow=0x7f090064;
+        public static final int calendar_title_view=0x7f090061;
+        public static final int calendar_tv=0x7f09006c;
         public static final int checkbox=0x7f090038;
         public static final int collapseActionView=0x7f090017;
         public static final int contentPanel=0x7f090031;
@@ -1660,6 +1663,8 @@ containing a value of this type.
         public static final int disableHome=0x7f09000c;
         public static final int dropdown=0x7f09001c;
         public static final int duyName=0x7f090052;
+        public static final int editText=0x7f09005d;
+        public static final int editText2=0x7f09005c;
         public static final int edit_query=0x7f090042;
         public static final int end=0x7f090014;
         public static final int expand_activities_button=0x7f090027;
@@ -1674,16 +1679,16 @@ containing a value of this type.
         public static final int input_username=0x7f090054;
         public static final int julieName=0x7f090053;
         public static final int listMode=0x7f090009;
-        public static final int listTextView=0x7f090060;
+        public static final int listTextView=0x7f090069;
         public static final int list_item=0x7f09002a;
         public static final int middle=0x7f090015;
-        public static final int months_infinite_pager=0x7f09005d;
+        public static final int months_infinite_pager=0x7f090066;
         public static final int multiply=0x7f09001e;
-        public static final int myCalendar=0x7f090061;
+        public static final int myCalendar=0x7f09006a;
         public static final int never=0x7f090019;
         public static final int none=0x7f09000e;
         public static final int normal=0x7f09000a;
-        public static final int pager=0x7f090057;
+        public static final int pager=0x7f090060;
         public static final int parentPanel=0x7f09002d;
         public static final int progress_circular=0x7f090005;
         public static final int progress_horizontal=0x7f090006;
@@ -1700,7 +1705,7 @@ containing a value of this type.
         public static final int search_plate=0x7f090048;
         public static final int search_src_text=0x7f090049;
         public static final int search_voice_btn=0x7f09004d;
-        public static final int section_label=0x7f090062;
+        public static final int section_label=0x7f09006b;
         public static final int select_dialog_listview=0x7f09004e;
         public static final int shortcut=0x7f090039;
         public static final int showCustom=0x7f09000f;
@@ -1713,12 +1718,16 @@ containing a value of this type.
         public static final int submit_area=0x7f09004b;
         public static final int tabMode=0x7f09000b;
         public static final int textSpacerNoButtons=0x7f090033;
+        public static final int textView=0x7f090058;
+        public static final int textView2=0x7f09005a;
+        public static final int textView3=0x7f09005f;
+        public static final int textView4=0x7f09005e;
         public static final int title=0x7f09002c;
         public static final int title_template=0x7f09002f;
         public static final int topPanel=0x7f09002e;
         public static final int up=0x7f090008;
         public static final int useLogo=0x7f090012;
-        public static final int weekday_gridview=0x7f09005c;
+        public static final int weekday_gridview=0x7f090065;
         public static final int withText=0x7f09001a;
         public static final int wrap_content=0x7f09001d;
     }
@@ -1755,24 +1764,26 @@ containing a value of this type.
         public static final int abc_simple_dropdown_hint=0x7f040018;
         public static final int activity_about=0x7f040019;
         public static final int activity_login=0x7f04001a;
-        public static final int activity_tabs=0x7f04001b;
-        public static final int calendar_view=0x7f04001c;
-        public static final int date_grid_fragment=0x7f04001d;
-        public static final int fragment_friends=0x7f04001e;
-        public static final int fragment_groups=0x7f04001f;
-        public static final int fragment_my_calendar=0x7f040020;
-        public static final int fragment_tabs=0x7f040021;
-        public static final int normal_date_cell=0x7f040022;
-        public static final int select_dialog_item_material=0x7f040023;
-        public static final int select_dialog_multichoice_material=0x7f040024;
-        public static final int select_dialog_singlechoice_material=0x7f040025;
-        public static final int square_date_cell=0x7f040026;
-        public static final int support_simple_spinner_dropdown_item=0x7f040027;
-        public static final int weekday_textview=0x7f040028;
+        public static final int activity_register_folk=0x7f04001b;
+        public static final int activity_tabs=0x7f04001c;
+        public static final int calendar_view=0x7f04001d;
+        public static final int date_grid_fragment=0x7f04001e;
+        public static final int fragment_friends=0x7f04001f;
+        public static final int fragment_groups=0x7f040020;
+        public static final int fragment_my_calendar=0x7f040021;
+        public static final int fragment_tabs=0x7f040022;
+        public static final int normal_date_cell=0x7f040023;
+        public static final int select_dialog_item_material=0x7f040024;
+        public static final int select_dialog_multichoice_material=0x7f040025;
+        public static final int select_dialog_singlechoice_material=0x7f040026;
+        public static final int square_date_cell=0x7f040027;
+        public static final int support_simple_spinner_dropdown_item=0x7f040028;
+        public static final int weekday_textview=0x7f040029;
     }
     public static final class menu {
         public static final int menu_login=0x7f0d0000;
-        public static final int menu_tabs=0x7f0d0001;
+        public static final int menu_register_folk=0x7f0d0001;
+        public static final int menu_tabs=0x7f0d0002;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
@@ -1806,10 +1817,11 @@ containing a value of this type.
         public static final int password_hint=0x7f0b0019;
         public static final int send_button=0x7f0b001a;
         public static final int title_activity_login=0x7f0b001b;
-        public static final int title_section0=0x7f0b001c;
-        public static final int title_section1=0x7f0b001d;
-        public static final int title_section2=0x7f0b001e;
-        public static final int username_hint=0x7f0b001f;
+        public static final int title_activity_register_folk=0x7f0b001c;
+        public static final int title_section0=0x7f0b001d;
+        public static final int title_section1=0x7f0b001e;
+        public static final int title_section2=0x7f0b001f;
+        public static final int username_hint=0x7f0b0020;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f0c0000;
