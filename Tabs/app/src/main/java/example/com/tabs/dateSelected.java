@@ -13,6 +13,7 @@ import android.widget.Spinner;
 
 public class dateSelected extends Activity {
     EditText eventName, time;
+    String date;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +21,7 @@ public class dateSelected extends Activity {
         setContentView(R.layout.activity_date_selected);
 
         Bundle bundle = getIntent().getExtras();
-        String date = bundle.getString("date");
+        date = bundle.getString("date");
         TextView dateText = (TextView) findViewById(R.id.dateSelect);
         dateText.setText(date);
 
@@ -63,6 +64,6 @@ public class dateSelected extends Activity {
 //        final EditText feedbackField = (EditText) findViewById(R.id.EditTextFeedbackBody);
 //        String feedback = feedbackField.getText().toString();
 
-        
+        finish();
     }
 }
