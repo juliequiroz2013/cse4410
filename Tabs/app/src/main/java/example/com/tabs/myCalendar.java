@@ -14,13 +14,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 <<<<<<< HEAD
-<<<<<<< HEAD
 import android.widget.Toast;
 =======
 >>>>>>> master
-=======
-import android.widget.Toast;
->>>>>>> 57a855cf0a5d930c50e947b7c81b26a14bc25da1
 
 import com.roomorama.caldroid.CaldroidFragment;
 import com.roomorama.caldroid.CaldroidListener;
@@ -88,18 +84,12 @@ public class myCalendar extends android.support.v4.app.Fragment {
         View rootView =  inflater.inflate(R.layout.fragment_my_calendar, container, false);
 
 <<<<<<< HEAD
-<<<<<<< HEAD
         final SimpleDateFormat formatter = new SimpleDateFormat("dd MMM yyyy");
 
         final CaldroidFragment caldroidFragment = new CaldroidFragment();
 =======
         CaldroidFragment caldroidFragment = new CaldroidFragment();
 >>>>>>> master
-=======
-        final SimpleDateFormat formatter = new SimpleDateFormat("dd MMM yyyy");
-
-        final CaldroidFragment caldroidFragment = new CaldroidFragment();
->>>>>>> 57a855cf0a5d930c50e947b7c81b26a14bc25da1
         Bundle args = new Bundle();
         Calendar cal = Calendar.getInstance();
         args.putInt(CaldroidFragment.MONTH, cal.get(Calendar.MONTH) + 1);
@@ -115,61 +105,24 @@ public class myCalendar extends android.support.v4.app.Fragment {
         t.commit();
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 57a855cf0a5d930c50e947b7c81b26a14bc25da1
         // Setup listener
         final CaldroidListener listener = new CaldroidListener() {
 
             @Override
             public void onSelectDate(Date date, View view) {
-<<<<<<< HEAD
                 dateActivity(date, view);
                 /*Toast.makeText(getActivity(), formatter.format(date),
                         Toast.LENGTH_SHORT).show();*/
 
             }
 
-=======
-                Toast.makeText(getActivity(), formatter.format(date),
-                        Toast.LENGTH_SHORT).show();
-
-            }
-
-            @Override
-            public void onChangeMonth(int month, int year) {
-                String text = "month: " + month + " year: " + year;
-                Toast.makeText(getActivity(), text,
-                        Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onLongClickDate(Date date, View view) {
-                Toast.makeText(getActivity(),
-                        "Long click " + formatter.format(date),
-                        Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onCaldroidViewCreated() {
-                if (caldroidFragment.getLeftArrowButton() != null) {
-                    Toast.makeText(getActivity(),
-                            "Caldroid view is created", Toast.LENGTH_SHORT)
-                            .show();
-                }
-            }
-
->>>>>>> 57a855cf0a5d930c50e947b7c81b26a14bc25da1
         };
 
         // Setup Caldroid
         caldroidFragment.setCaldroidListener(listener);
 
-<<<<<<< HEAD
 =======
 >>>>>>> master
-=======
->>>>>>> 57a855cf0a5d930c50e947b7c81b26a14bc25da1
         return rootView;
     }
 
