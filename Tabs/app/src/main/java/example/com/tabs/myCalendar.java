@@ -100,32 +100,9 @@ public class myCalendar extends android.support.v4.app.Fragment {
             @Override
             public void onSelectDate(Date date, View view) {
                 dateActivity(date, view);
-                Toast.makeText(getActivity(), formatter.format(date),
-                        Toast.LENGTH_SHORT).show();
+                /*Toast.makeText(getActivity(), formatter.format(date),
+                        Toast.LENGTH_SHORT).show();*/
 
-            }
-
-            @Override
-            public void onChangeMonth(int month, int year) {
-                String text = "month: " + month + " year: " + year;
-                Toast.makeText(getActivity(), text,
-                        Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onLongClickDate(Date date, View view) {
-                Toast.makeText(getActivity(),
-                        "Long click " + formatter.format(date),
-                        Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onCaldroidViewCreated() {
-                if (caldroidFragment.getLeftArrowButton() != null) {
-                    Toast.makeText(getActivity(),
-                            "Caldroid view is created", Toast.LENGTH_SHORT)
-                            .show();
-                }
             }
 
         };

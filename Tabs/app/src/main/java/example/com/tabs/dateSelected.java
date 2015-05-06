@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.widget.EditText;
 import android.view.View;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 
 public class dateSelected extends Activity {
@@ -63,7 +64,7 @@ public class dateSelected extends Activity {
 
 //        final EditText feedbackField = (EditText) findViewById(R.id.EditTextFeedbackBody);
 //        String feedback = feedbackField.getText().toString();
-
+        Toast.makeText(getApplicationContext(), "Event Added!", Toast.LENGTH_SHORT).show();
         finish();
     }
 }
