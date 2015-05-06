@@ -1,0 +1,35 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_green"
+    tools:context="example.com.tabs.Friends">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Fragment Friends" />
+
+    <LinearLayout
+        android:id="@+id/Friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <!-- text view for list of friends -->
+    <TextView
+        android:id="@+id/listTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textSize="25dp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:background="@color/dark_green"
+        android:text="List Text View"
+        />
+
+</FrameLayout>
+<!-- From: file:/Users/Julie/cse4410/Tabs/app/src/main/res/layout/fragment_friends.xml -->

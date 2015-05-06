@@ -1,6 +1,10 @@
 package example.com.tabs;
 
 import android.app.Activity;
+<<<<<<< HEAD
+import android.content.Intent;
+=======
+>>>>>>> master
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
@@ -9,6 +13,10 @@ import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+<<<<<<< HEAD
+import android.widget.Toast;
+=======
+>>>>>>> master
 
 import com.roomorama.caldroid.CaldroidFragment;
 import com.roomorama.caldroid.CaldroidListener;
@@ -75,7 +83,13 @@ public class myCalendar extends android.support.v4.app.Fragment {
         // Inflate the layout for this fragment
         View rootView =  inflater.inflate(R.layout.fragment_my_calendar, container, false);
 
+<<<<<<< HEAD
+        final SimpleDateFormat formatter = new SimpleDateFormat("dd MMM yyyy");
+
+        final CaldroidFragment caldroidFragment = new CaldroidFragment();
+=======
         CaldroidFragment caldroidFragment = new CaldroidFragment();
+>>>>>>> master
         Bundle args = new Bundle();
         Calendar cal = Calendar.getInstance();
         args.putInt(CaldroidFragment.MONTH, cal.get(Calendar.MONTH) + 1);
@@ -90,6 +104,25 @@ public class myCalendar extends android.support.v4.app.Fragment {
         t.replace(R.id.myCalendar, caldroidFragment);
         t.commit();
 
+<<<<<<< HEAD
+        // Setup listener
+        final CaldroidListener listener = new CaldroidListener() {
+
+            @Override
+            public void onSelectDate(Date date, View view) {
+                dateActivity(date, view);
+                /*Toast.makeText(getActivity(), formatter.format(date),
+                        Toast.LENGTH_SHORT).show();*/
+
+            }
+
+        };
+
+        // Setup Caldroid
+        caldroidFragment.setCaldroidListener(listener);
+
+=======
+>>>>>>> master
         return rootView;
     }
 
@@ -98,4 +131,16 @@ public class myCalendar extends android.support.v4.app.Fragment {
         myContext=(FragmentActivity) activity;
         super.onAttach(activity);
     }
+<<<<<<< HEAD
+
+    public void dateActivity(Date date, View v){
+        final SimpleDateFormat formatter = new SimpleDateFormat("dd MMM yyyy");
+        Intent i = new Intent(getActivity(), dateSelected.class);
+        Bundle args = new Bundle();
+        args.putString("date", formatter.format(date));
+        i.putExtras(args);
+        startActivity(i);
+    }
+=======
+>>>>>>> master
 }

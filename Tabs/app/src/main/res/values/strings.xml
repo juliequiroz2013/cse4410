@@ -3,7 +3,11 @@
 
     <string name="title_section0">My Calendar</string>
     <string name="title_section1">Friends</string>
+<<<<<<< HEAD
+    <string name="title_section2">Events</string>
+=======
     <string name="title_section2">Groups</string>
+>>>>>>> master
 
     <string name="hello_world">Hello world!</string>
 
@@ -25,4 +29,59 @@
     <string name="david_name">David Ian Inguanzo Caldera</string>
     <string name="duy_name">Duy Tran</string>
     <string name="julie_name">Julie Quiroz</string>
+<<<<<<< HEAD
+    <string name="title_activity_date_selected">dateSelected</string>
+
+    <string name = "time1">12:00 AM</string>
+    <string name = "time2">12:30 AM</string>
+    <string name = "time3">1:00 AM</string>
+    <string name = "time4">1:30 AM</string>
+    <string name = "time5">2:00 AM</string>
+    <string name = "time6">2:30 AM</string>
+    <string name = "time7">3:00 AM</string>
+    <string name = "time8">3:30 AM</string>
+    <string name = "time9">4:00 AM</string>
+    <string name = "time10">4:30 AM</string>
+    <string name = "time11">5:00 AM</string>
+    <string name = "time12">5:30 AM</string>
+    <string name = "time13">6:00 AM</string>
+    <string name = "time14">6:30 AM</string>
+    <string name = "time15">7:00 AM</string>
+    <string name = "time16">7:30 AM</string>
+    <string name = "time17">8:00 AM</string>
+    <string name = "time18">8:30 AM</string>
+    <string name = "time19">9:00 AM</string>
+    <string name = "time20">9:30 AM</string>
+    <string name = "time21">10:00 AM</string>
+    <string name = "time22">10:30 AM</string>
+    <string name = "time23">11:00 AM</string>
+    <string name = "time24">11:30 AM</string>
+    <string name = "time25">12:00 PM</string>
+    <string name = "time26">12:30 PM</string>
+    <string name = "time27">1:00 PM</string>
+    <string name = "time28">1:30 PM</string>
+    <string name = "time29">2:00 PM</string>
+    <string name = "time30">2:30 PM</string>
+    <string name = "time31">3:00 PM</string>
+    <string name = "time32">3:30 PM</string>
+    <string name = "time33">4:00 PM</string>
+    <string name = "time34">4:30 PM</string>
+    <string name = "time35">5:00 PM</string>
+    <string name = "time36">5:30 PM</string>
+    <string name = "time37">6:00 PM</string>
+    <string name = "time38">6:30 PM</string>
+    <string name = "time39">7:00 PM</string>
+    <string name = "time40">7:30 PM</string>
+    <string name = "time41">8:00 PM</string>
+    <string name = "time42">8:30 PM</string>
+    <string name = "time43">9:00 PM</string>
+    <string name = "time44">9:30 PM</string>
+    <string name = "time45">10:00 PM</string>
+    <string name = "time46">10:30 PM</string>
+    <string name = "time47">11:00 PM</string>
+    <string name = "time48">11:30 PM</string>
+
+
+=======
+>>>>>>> master
 </resources>
