@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/padding_default"
+    android:paddingRight="@dimen/padding_default"
+    android:paddingTop="@dimen/padding_default"
+    android:paddingBottom="@dimen/padding_default"
+    android:layout_margin="0dp"
+    android:background="@color/light_green"
+    tools:context="example.com.tabs.addFriend">
+
+    <TextView
+        android:id="@+id/addFriendTitle"
+        android:text="Add New Friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_regular_size" />
+
+    <EditText
+        android:id="@+id/addFriendName"
+        android:layout_below="@+id/addFriendTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Friend Name"
+        android:textColorHint="@color/white"
+        android:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/addFriendButton"
+        android:layout_below="@+id/addFriendName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add friend"
+        android:textColor="@color/white"
+        android:background="@color/dark_green"
+        android:paddingLeft="@dimen/padding_default"
+        android:paddingRight="@dimen/padding_default"
+        android:layout_marginTop="@dimen/padding_default"
+        android:layout_centerHorizontal="true"
+        android:onClick="addNewFriend" />
+
+</RelativeLayout>

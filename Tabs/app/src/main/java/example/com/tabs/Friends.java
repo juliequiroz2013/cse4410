@@ -83,8 +83,4 @@ public class Friends extends ListFragment implements LoaderCallbacks<Cursor> {
         // on reset take any old cursor away
         mAdapter.swapCursor(null);
     }
-
-    public void tempClick(View viewThis){
-        // do something
-    }
 }
