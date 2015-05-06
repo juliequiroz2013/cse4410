@@ -92,4 +92,9 @@ public class Login extends ActionBarActivity {
             }
         }
     }
+
+    public void CreateUserMethod(View v){
+        Intent i = new Intent(this,RegisterFolk.class);
+        startActivity(i);
+    }
 }
