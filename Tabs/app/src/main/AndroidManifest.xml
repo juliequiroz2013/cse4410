@@ -35,6 +35,11 @@
                 android:value=".tabs"/>
         </activity>
 
+        <activity
+            android:name=".RegisterFolk"
+            android:label="@string/title_activity_register_folk" >
+        </activity>
+
     </application>
 
 </manifest>
