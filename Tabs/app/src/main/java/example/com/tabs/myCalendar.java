@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.roomorama.caldroid.CaldroidFragment;
 import com.roomorama.caldroid.CaldroidListener;
@@ -75,7 +76,9 @@ public class myCalendar extends android.support.v4.app.Fragment {
         // Inflate the layout for this fragment
         View rootView =  inflater.inflate(R.layout.fragment_my_calendar, container, false);
 
-        CaldroidFragment caldroidFragment = new CaldroidFragment();
+        final SimpleDateFormat formatter = new SimpleDateFormat("dd MMM yyyy");
+
+        final CaldroidFragment caldroidFragment = new CaldroidFragment();
         Bundle args = new Bundle();
         Calendar cal = Calendar.getInstance();
         args.putInt(CaldroidFragment.MONTH, cal.get(Calendar.MONTH) + 1);
@@ -89,6 +92,44 @@ public class myCalendar extends android.support.v4.app.Fragment {
 
         t.replace(R.id.myCalendar, caldroidFragment);
         t.commit();
+
+        // Setup listener
+        final CaldroidListener listener = new CaldroidListener() {
+
+            @Override
+            public void onSelectDate(Date date, View view) {
+                Toast.makeText(getActivity(), formatter.format(date),
+                        Toast.LENGTH_SHORT).show();
+
+            }
+
+            @Override
+            public void onChangeMonth(int month, int year) {
+                String text = "month: " + month + " year: " + year;
+                Toast.makeText(getActivity(), text,
+                        Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onLongClickDate(Date date, View view) {
+                Toast.makeText(getActivity(),
+                        "Long click " + formatter.format(date),
+                        Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onCaldroidViewCreated() {
+                if (caldroidFragment.getLeftArrowButton() != null) {
+                    Toast.makeText(getActivity(),
+                            "Caldroid view is created", Toast.LENGTH_SHORT)
+                            .show();
+                }
+            }
+
+        };
+
+        // Setup Caldroid
+        caldroidFragment.setCaldroidListener(listener);
 
         return rootView;
     }
