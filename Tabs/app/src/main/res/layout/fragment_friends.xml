@@ -29,6 +29,8 @@
         android:textColor="@color/white"
         android:background="@color/dark_green"
         android:text="List Text View"
+        android:clickable="true"
+        android:onClick="userClick"
         />
 
 </FrameLayout>

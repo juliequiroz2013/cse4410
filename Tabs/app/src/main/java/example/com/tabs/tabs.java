@@ -3,6 +3,7 @@ package example.com.tabs;
 import java.util.Locale;
 
 import android.content.Intent;
+import android.provider.ContactsContract;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -18,6 +19,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class tabs extends ActionBarActivity implements ActionBar.TabListener {
@@ -222,4 +224,23 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
         }
     }
 
+    // when user is selected
+    public void userClick(View viewThis){
+        TextView textView = new TextView(this);
+        textView.setTextSize(30);
+        textView.setBackgroundColor(getResources().getColor(R.color.light_green));
+        textView.setTextColor(getResources().getColor(R.color.white));
+        TextView tView = (TextView) findViewById(R.id.listTextView);
+        String strName = tView.getText().toString();
+        textView.setText(strName);
+
+        setContentView(textView);
+        /*Intent newInt1 = new Intent(this, About.class);
+        startActivity(newInt1);*/
+    }
+
+    public void addNewFriend(){
+        Toast toast = Toast.makeText(this, "friend added", Toast.LENGTH_SHORT);
+        toast.show();
+    }
 }
