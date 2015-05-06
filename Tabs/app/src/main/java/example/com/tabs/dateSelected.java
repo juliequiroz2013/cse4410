@@ -51,9 +51,10 @@ public class dateSelected extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
+
     public void sendEvent(View button){
         //do click handling here
-        final EditText eventField = (EditText) findViewById(R.id.dateSelect);
+        final EditText eventField = (EditText) findViewById(R.id.eventName);
         String name = eventField.getText().toString();
 
         final Spinner timeSpinner = (Spinner) findViewById(R.id.SpinnerTime);

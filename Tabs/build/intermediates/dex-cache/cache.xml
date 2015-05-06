@@ -2,13 +2,6 @@
 <items version="2" >
 
     <item
-        jar="/Users/Julie/Documents/adt/sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
-        <dex dex="/Users/Julie/cse4410/Tabs/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-3b8cf5c5c8719f20678a392ff53aa15a84cde800.jar" />
-    </item>
-    <item
         jar="/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.roomorama/caldroid/2.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -23,6 +16,20 @@
         <dex dex="/Users/Julie/cse4410/Tabs/app/build/intermediates/pre-dexed/debug/hirondelle-date4j-1.5.1-db8db12398489484d911d8a7741ea4493a527df4.jar" />
     </item>
     <item
+        jar="/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="/Users/Julie/cse4410/Tabs/app/build/intermediates/pre-dexed/debug/classes-442314cf2533168f6fb2eed98b1651bcf227b26f.jar" />
+    </item>
+    <item
+        jar="/Users/Julie/Documents/adt/sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="/Users/Julie/cse4410/Tabs/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-3b8cf5c5c8719f20678a392ff53aa15a84cde800.jar" />
+    </item>
+    <item
         jar="/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/libs/internal_impl-22.1.1.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -35,13 +42,6 @@
         revision="21.1.2"
         sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
         <dex dex="/Users/Julie/cse4410/Tabs/app/build/intermediates/pre-dexed/debug/classes-2d721b5bd93bad669c707de0195306cda394142d.jar" />
-    </item>
-    <item
-        jar="/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
-        <dex dex="/Users/Julie/cse4410/Tabs/app/build/intermediates/pre-dexed/debug/classes-442314cf2533168f6fb2eed98b1651bcf227b26f.jar" />
     </item>
 
 </items>
