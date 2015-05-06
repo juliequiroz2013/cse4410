@@ -1,5 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- From: file:/Users/Julie/cse4410/Tabs/app/src/main/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="timeList">
+        <item>@string/time1</item>
+        <item>@string/time2</item>
+        <item>@string/time3</item>
+        <item>@string/time4</item>
+        <item>@string/time5</item>
+        <item>@string/time6</item>
+        <item>@string/time7</item>
+        <item>@string/time8</item>
+        <item>@string/time9</item>
+        <item>@string/time10</item>
+        <item>@string/time11</item>
+        <item>@string/time12</item>
+        <item>@string/time13</item>
+        <item>@string/time14</item>
+        <item>@string/time15</item>
+        <item>@string/time16</item>
+        <item>@string/time17</item>
+        <item>@string/time18</item>
+        <item>@string/time19</item>
+        <item>@string/time20</item>
+        <item>@string/time21</item>
+        <item>@string/time22</item>
+        <item>@string/time23</item>
+        <item>@string/time24</item>
+        <item>@string/time25</item>
+        <item>@string/time26</item>
+        <item>@string/time27</item>
+        <item>@string/time28</item>
+        <item>@string/time29</item>
+        <item>@string/time30</item>
+        <item>@string/time31</item>
+        <item>@string/time32</item>
+        <item>@string/time33</item>
+        <item>@string/time34</item>
+        <item>@string/time35</item>
+        <item>@string/time36</item>
+        <item>@string/time37</item>
+        <item>@string/time38</item>
+        <item>@string/time39</item>
+        <item>@string/time40</item>
+        <item>@string/time41</item>
+        <item>@string/time42</item>
+        <item>@string/time43</item>
+        <item>@string/time44</item>
+        <item>@string/time45</item>
+        <item>@string/time46</item>
+        <item>@string/time47</item>
+        <item>@string/time48</item>
+    </string-array>
     <!-- From: file:/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
@@ -232,10 +284,21 @@
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
+    <!-- From: file:/Users/Julie/cse4410/Tabs/app/src/main/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="dateSelect" type="id">dateSelect</item>
+    <item name="eventName" type="id"/>
+    <!-- From: file:/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <eat-comment/>
     <item name="home" type="id"/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
     <item name="split_action_bar" type="id"/>
+    <!-- From: file:/Users/Julie/cse4410/Tabs/app/src/main/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="time" type="id"/>
+    <!-- From: file:/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <eat-comment/>
     <item name="up" type="id"/>
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
@@ -269,11 +332,60 @@
     <string name="julie_name">Julie Quiroz</string>
     <string name="password_hint">Password</string>
     <string name="send_button">Log Into Groupal</string>
+    <string name="time1">12:00 AM</string>
+    <string name="time10">4:30 AM</string>
+    <string name="time11">5:00 AM</string>
+    <string name="time12">5:30 AM</string>
+    <string name="time13">6:00 AM</string>
+    <string name="time14">6:30 AM</string>
+    <string name="time15">7:00 AM</string>
+    <string name="time16">7:30 AM</string>
+    <string name="time17">8:00 AM</string>
+    <string name="time18">8:30 AM</string>
+    <string name="time19">9:00 AM</string>
+    <string name="time2">12:30 AM</string>
+    <string name="time20">9:30 AM</string>
+    <string name="time21">10:00 AM</string>
+    <string name="time22">10:30 AM</string>
+    <string name="time23">11:00 AM</string>
+    <string name="time24">11:30 AM</string>
+    <string name="time25">12:00 PM</string>
+    <string name="time26">12:30 PM</string>
+    <string name="time27">1:00 PM</string>
+    <string name="time28">1:30 PM</string>
+    <string name="time29">2:00 PM</string>
+    <string name="time3">1:00 AM</string>
+    <string name="time30">2:30 PM</string>
+    <string name="time31">3:00 PM</string>
+    <string name="time32">3:30 PM</string>
+    <string name="time33">4:00 PM</string>
+    <string name="time34">4:30 PM</string>
+    <string name="time35">5:00 PM</string>
+    <string name="time36">5:30 PM</string>
+    <string name="time37">6:00 PM</string>
+    <string name="time38">6:30 PM</string>
+    <string name="time39">7:00 PM</string>
+    <string name="time4">1:30 AM</string>
+    <string name="time40">7:30 PM</string>
+    <string name="time41">8:00 PM</string>
+    <string name="time42">8:30 PM</string>
+    <string name="time43">9:00 PM</string>
+    <string name="time44">9:30 PM</string>
+    <string name="time45">10:00 PM</string>
+    <string name="time46">10:30 PM</string>
+    <string name="time47">11:00 PM</string>
+    <string name="time48">11:30 PM</string>
+    <string name="time5">2:00 AM</string>
+    <string name="time6">2:30 AM</string>
+    <string name="time7">3:00 AM</string>
+    <string name="time8">3:30 AM</string>
+    <string name="time9">4:00 AM</string>
+    <string name="title_activity_date_selected">dateSelected</string>
     <string name="title_activity_login">Login</string>
     <string name="title_activity_register_folk">RegisterFolk</string>
     <string name="title_section0">My Calendar</string>
     <string name="title_section1">Friends</string>
-    <string name="title_section2">Groups</string>
+    <string name="title_section2">Events</string>
     <string name="username_hint">Username</string>
     <!-- From: file:/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>

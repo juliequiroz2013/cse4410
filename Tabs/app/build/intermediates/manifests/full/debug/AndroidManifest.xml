@@ -39,6 +39,10 @@
             android:name="example.com.tabs.RegisterFolk"
             android:label="@string/title_activity_register_folk" >
         </activity>
+        <activity
+            android:name="example.com.tabs.dateSelected"
+            android:label="@string/title_activity_date_selected" >
+        </activity>
     </application>
 
 </manifest>

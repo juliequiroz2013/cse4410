@@ -1,6 +1,7 @@
 package example.com.tabs;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
@@ -98,6 +99,7 @@ public class myCalendar extends android.support.v4.app.Fragment {
 
             @Override
             public void onSelectDate(Date date, View view) {
+                dateActivity(date, view);
                 Toast.makeText(getActivity(), formatter.format(date),
                         Toast.LENGTH_SHORT).show();
 
@@ -138,5 +140,14 @@ public class myCalendar extends android.support.v4.app.Fragment {
     public void onAttach(Activity activity) {
         myContext=(FragmentActivity) activity;
         super.onAttach(activity);
+    }
+
+    public void dateActivity(Date date, View v){
+        final SimpleDateFormat formatter = new SimpleDateFormat("dd MMM yyyy");
+        Intent i = new Intent(getActivity(), dateSelected.class);
+        Bundle args = new Bundle();
+        args.putString("date", formatter.format(date));
+        i.putExtras(args);
+        startActivity(i);
     }
 }

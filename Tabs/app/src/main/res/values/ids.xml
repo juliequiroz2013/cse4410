@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="dateSelect" type="id">dateSelect</item>
+    <item name="eventName" type="id" />
+    <item name="time" type="id" />
+</resources>
