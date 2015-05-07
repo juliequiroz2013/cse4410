@@ -29,7 +29,7 @@ public class dateSelected extends Activity {
 
         eventName= (EditText) findViewById(R.id.eventName);
         time=(EditText) findViewById(R.id.time);
-
+        duyHelper = new DuyDatabaseAdapter(this);
     }
 
 
