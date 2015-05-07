@@ -15,7 +15,6 @@ import android.widget.Toast;
 public class dateSelected extends Activity {
     EditText eventName, time;
     String date;
-    DuyDatabaseAdapter duyHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +28,6 @@ public class dateSelected extends Activity {
 
         eventName= (EditText) findViewById(R.id.eventName);
         time=(EditText) findViewById(R.id.time);
-        duyHelper = new DuyDatabaseAdapter(this);
     }
 
 
@@ -59,14 +57,13 @@ public class dateSelected extends Activity {
     public void sendEvent(View button){
         //do click handling here
         final EditText eventField = (EditText) findViewById(R.id.eventName);
-        String eventName = eventField.getText().toString();
+        String name = eventField.getText().toString();
 
         final Spinner timeSpinner = (Spinner) findViewById(R.id.SpinnerTime);
-        String time = timeSpinner.getSelectedItem().toString();
+        String timeType = timeSpinner.getSelectedItem().toString();
 
-        //event insert here
-        long id = duyHelper.insert_event(eventName, date, time);
-
+//        final EditText feedbackField = (EditText) findViewById(R.id.EditTextFeedbackBody);
+//        String feedback = feedbackField.getText().toString();
         Toast.makeText(getApplicationContext(), "Event Added!", Toast.LENGTH_SHORT).show();
         finish();
     }

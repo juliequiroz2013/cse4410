@@ -3,11 +3,7 @@
 
     <string name="title_section0">My Calendar</string>
     <string name="title_section1">Friends</string>
-<<<<<<< HEAD
     <string name="title_section2">Events</string>
-=======
-    <string name="title_section2">Groups</string>
->>>>>>> master
 
     <string name="hello_world">Hello world!</string>
 
@@ -29,7 +25,6 @@
     <string name="david_name">David Ian Inguanzo Caldera</string>
     <string name="duy_name">Duy Tran</string>
     <string name="julie_name">Julie Quiroz</string>
-<<<<<<< HEAD
     <string name="title_activity_date_selected">dateSelected</string>
 
     <string name = "time1">12:00 AM</string>
@@ -82,6 +77,4 @@
     <string name = "time48">11:30 PM</string>
 
 
-=======
->>>>>>> master
 </resources>
