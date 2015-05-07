@@ -1,16 +1,10 @@
 package example.com.tabs;
 
-
-import android.app.Activity;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
-import android.widget.Toast;
 
 
 /**
@@ -43,8 +37,8 @@ public class addFriend extends Fragment {
      * @return A new instance of fragment BreakfastFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static Groups newInstance(int sectionNumber) {
-        Groups fragment = new Groups();
+    public static addFriend newInstance(int sectionNumber) {
+        addFriend fragment = new addFriend();
         Bundle args = new Bundle();
         args.putInt(ARG_SECTION_NUMBER, sectionNumber);
         fragment.setArguments(args);
@@ -55,13 +49,7 @@ public class addFriend extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_groups, container, false);
+        return inflater.inflate(R.layout.fragment_add_friend, container, false);
     }
 
-    /*public void viewFriends(View viewThis){
-        Intent i = new Intent(getActivity(), viewFriends.class);
-        Bundle args = new Bundle();
-        i.putExtras(args);
-        startActivity(i);
-    }*/
 }

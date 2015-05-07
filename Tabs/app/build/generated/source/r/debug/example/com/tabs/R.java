@@ -1802,7 +1802,8 @@ containing a value of this type.
     public static final class menu {
         public static final int menu_date_selected=0x7f0e0000;
         public static final int menu_login=0x7f0e0001;
-        public static final int menu_tabs=0x7f0e0002;
+        public static final int menu_register_folk=0x7f0e0002;
+        public static final int menu_tabs=0x7f0e0003;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;

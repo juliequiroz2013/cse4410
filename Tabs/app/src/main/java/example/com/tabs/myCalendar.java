@@ -31,6 +31,7 @@ import java.util.Date;
 */
 public class myCalendar extends android.support.v4.app.Fragment {
     FragmentActivity myContext;
+    DuyDatabaseAdapter duyHelper;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

@@ -11,6 +11,7 @@ import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
 import android.support.v4.widget.CursorAdapter;
 import android.support.v4.widget.SimpleCursorAdapter;
+import android.view.View;
 
 public class Friends extends ListFragment implements LoaderCallbacks<Cursor> {
 
@@ -31,6 +32,7 @@ public class Friends extends ListFragment implements LoaderCallbacks<Cursor> {
 
         // create adapter once
         Context context = getActivity();
+        //int layout = android.R.layout.simple_list_item_1;
         int layout = R.layout.fragment_friends;
         Cursor c = null; // there is no cursor yet
         int flags = 0; // no auto-requery! Loader requeries.
@@ -55,7 +57,9 @@ public class Friends extends ListFragment implements LoaderCallbacks<Cursor> {
 
     // and name should be displayed in the text1 textview in item layout
     private static final String[] FROM = { Contacts.DISPLAY_NAME_PRIMARY };
-    private static final int[] TO = { R.id.listTextView };
+    //private static final String[] FROM = {Contacts.Data.DATA4};
+    //private static final int[] TO = { android.R.id.text1 };
+    private static final int[] TO = {R.id.listTextView};
 
     @Override
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {
@@ -78,5 +82,9 @@ public class Friends extends ListFragment implements LoaderCallbacks<Cursor> {
     public void onLoaderReset(Loader<Cursor> loader) {
         // on reset take any old cursor away
         mAdapter.swapCursor(null);
+    }
+
+    public void tempClick(View viewThis){
+        // do something
     }
 }

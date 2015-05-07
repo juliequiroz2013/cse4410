@@ -5,7 +5,6 @@
     <string name="title_section1">Friends</string>
     <string name="title_section2">Events</string>
 
-
     <string name="hello_world">Hello world!</string>
 
     <!-- action button strings -->
@@ -21,15 +20,14 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_login">Login</string>
     <string name="title_activity_register_folk">RegisterFolk</string>
+    <string name="title_activity_view_friends">AddFriends</string>
     <string name="title_activity_date_selected">dateSelected</string>
-    <string name="title_activity_view_friends">Friends List</string>
 
     <!--  group names -->
     <string name="david_name">David Ian Inguanzo Caldera</string>
     <string name="duy_name">Duy Tran</string>
     <string name="julie_name">Julie Quiroz</string>
 
-    <!-- times -->
     <string name = "time1">12:00 AM</string>
     <string name = "time2">12:30 AM</string>
     <string name = "time3">1:00 AM</string>
@@ -78,5 +76,6 @@
     <string name = "time46">10:30 PM</string>
     <string name = "time47">11:00 PM</string>
     <string name = "time48">11:30 PM</string>
+
 
 </resources>

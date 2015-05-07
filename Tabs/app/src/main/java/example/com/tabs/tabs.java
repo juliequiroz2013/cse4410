@@ -225,30 +225,16 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
         }
     }
 
-    // when user is selected
-    public void userClick(View viewThis){
-        TextView textView = new TextView(this);
-        textView.setTextSize(30);
-        textView.setBackgroundColor(getResources().getColor(R.color.light_green));
-        textView.setTextColor(getResources().getColor(R.color.white));
-        TextView tView = (TextView) findViewById(R.id.listTextView);
-        String strName = tView.getText().toString();
-        textView.setText(strName);
-
-        Toast.makeText(getApplicationContext(), strName, Toast.LENGTH_SHORT).show();
-        /*Intent newInt1 = new Intent(this, About.class);
-        startActivity(newInt1);*/
-    }
-
     public void addNewFriend(View viewThis) {
         // Required empty public constructor
         EditText editTextUser = (EditText) findViewById(R.id.addFriendName);
         String userName = editTextUser.getText().toString();
-        Toast.makeText(this, userName+" added", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, userName + " added", Toast.LENGTH_SHORT).show();
     }
 
     public void viewFriends(View viewThis){
         Intent newInt1 = new Intent(this, viewFriends.class);
         startActivity(newInt1);
     }
+
 }
