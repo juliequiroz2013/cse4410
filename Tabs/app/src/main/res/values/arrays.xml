@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timeList">
+        <item>@string/time1</item>
+        <item>@string/time2</item>
+        <item>@string/time3</item>
+        <item>@string/time4</item>
+        <item>@string/time5</item>
+        <item>@string/time6</item>
+        <item>@string/time7</item>
+        <item>@string/time8</item>
+        <item>@string/time9</item>
+        <item>@string/time10</item>
+        <item>@string/time11</item>
+        <item>@string/time12</item>
+        <item>@string/time13</item>
+        <item>@string/time14</item>
+        <item>@string/time15</item>
+        <item>@string/time16</item>
+        <item>@string/time17</item>
+        <item>@string/time18</item>
+        <item>@string/time19</item>
+        <item>@string/time20</item>
+        <item>@string/time21</item>
+        <item>@string/time22</item>
+        <item>@string/time23</item>
+        <item>@string/time24</item>
+        <item>@string/time25</item>
+        <item>@string/time26</item>
+        <item>@string/time27</item>
+        <item>@string/time28</item>
+        <item>@string/time29</item>
+        <item>@string/time30</item>
+        <item>@string/time31</item>
+        <item>@string/time32</item>
+        <item>@string/time33</item>
+        <item>@string/time34</item>
+        <item>@string/time35</item>
+        <item>@string/time36</item>
+        <item>@string/time37</item>
+        <item>@string/time38</item>
+        <item>@string/time39</item>
+        <item>@string/time40</item>
+        <item>@string/time41</item>
+        <item>@string/time42</item>
+        <item>@string/time43</item>
+        <item>@string/time44</item>
+        <item>@string/time45</item>
+        <item>@string/time46</item>
+        <item>@string/time47</item>
+        <item>@string/time48</item>
+    </string-array>
+</resources>

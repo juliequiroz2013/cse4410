@@ -2,6 +2,7 @@ package example.com.tabs;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -16,18 +17,18 @@ public class DuyDatabaseAdapter{
     public DuyDatabaseAdapter(Context context){
         helper = new DuyHelper(context);
     }
-/*
-    public long insertData(String name, String password){
-        SQLiteDatabase db = helper.getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
+    /*
+        public long insertData(String name, String password){
+            SQLiteDatabase db = helper.getWritableDatabase();
+            ContentValues contentValues = new ContentValues();
 
-        contentValues.put(DuyHelper.NAME, name);
-        contentValues.put(DuyHelper.PASSWORD, password);
-        long id = db.insert(DuyHelper.TABLE_NAME,null,contentValues);
-        return id;
-    }
+            contentValues.put(DuyHelper.NAME, name);
+            contentValues.put(DuyHelper.PASSWORD, password);
+            long id = db.insert(DuyHelper.TABLE_NAME,null,contentValues);
+            return id;
+        }
 
-*/
+    */
     public long insert_friend(String name){
         Log.d("Duy", "Enter insert function");
         Log.d("Duy", "Enter insert function "+name +"");
@@ -64,6 +65,22 @@ public class DuyDatabaseAdapter{
         return id;
     }
 
+// Query out to database
+    public String getallfriend(){
+        SQLiteDatabase db = helper.getWritableDatabase();
+        String[] col = {DuyHelper.FRIEND_NAME};
+        Cursor cursor = db.query(DuyHelper.FRIEND_TABLE, col, null, null, null, null, null);
+        StringBuffer buffer = new StringBuffer();
+        while(cursor.moveToNext()){
+            int index1 = cursor.getColumnIndex(DuyHelper.FRIEND_NAME);
+            String name = cursor.getString(index1);
+            buffer.append("Name: "+name+"\n");
+        }
+               return buffer.toString();
+    }
+
+
+
 
 
     static class DuyHelper  extends SQLiteOpenHelper {
@@ -80,9 +97,9 @@ public class DuyDatabaseAdapter{
 
         //ALL EVENT TABLE
 
-          private static final String EVENT_NAME="eventname";
-          private static final String EVENT_DATE="eventdate";
-          private static final String EVENT_TIME="eventtime";
+        private static final String EVENT_NAME="eventname";
+        private static final String EVENT_DATE="eventdate";
+        private static final String EVENT_TIME="eventtime";
 
         //ONE EVENT TABLE
         private static final String EVENT_NAME_FK="eventname_fk";
@@ -99,12 +116,12 @@ public class DuyDatabaseAdapter{
                 "FOREIGN KEY (`"+FRIEND_NAME_FK+"`) REFERENCES "+FRIEND_TABLE+"(id) ON DELETE NO ACTION ON UPDATE CASCADE  );";
 
 
-       // private static final String CREATE_INDEX="ALTER TABLE "+ONE_EVENT_TABLE+" CREATE INDEX PINSE
-      //  private static final String MAKE_FK="ALTER TABLE "+ONE_EVENT_TABLE+" ADD CONSTRAINT Event_con FOREIGN KEY (`"+EVENT_NAME_FK+"`) REFERENCES `"+DATABASE_NAME+"`.`"+All_EVENT_TABLE+"`(`id`) ON DELETE NO ACTION ON UPDATE CASCADE;";
-     //   private static final String MAKE_FK2=" ALTER TABLE "+ONE_EVENT_TABLE+" ADD CONSTRAINT Friend_con FOREIGN KEY (`"+FRIEND_NAME_FK+"`) REFERENCES `"+DATABASE_NAME+"`.`"+FRIEND_TABLE+"`(`id`) ON DELETE NO ACTION ON UPDATE CASCADE;";
+        // private static final String CREATE_INDEX="ALTER TABLE "+ONE_EVENT_TABLE+" CREATE INDEX PINSE
+        //  private static final String MAKE_FK="ALTER TABLE "+ONE_EVENT_TABLE+" ADD CONSTRAINT Event_con FOREIGN KEY (`"+EVENT_NAME_FK+"`) REFERENCES `"+DATABASE_NAME+"`.`"+All_EVENT_TABLE+"`(`id`) ON DELETE NO ACTION ON UPDATE CASCADE;";
+        //   private static final String MAKE_FK2=" ALTER TABLE "+ONE_EVENT_TABLE+" ADD CONSTRAINT Friend_con FOREIGN KEY (`"+FRIEND_NAME_FK+"`) REFERENCES `"+DATABASE_NAME+"`.`"+FRIEND_TABLE+"`(`id`) ON DELETE NO ACTION ON UPDATE CASCADE;";
 
 
-       // private static final String CREATE_ALL_TABLE= " "+CREATE_TABLE1+" "+CREATE_TABLE2+" "+CREATE_TABLE3+" "+MAKE_FK+" ";
+        // private static final String CREATE_ALL_TABLE= " "+CREATE_TABLE1+" "+CREATE_TABLE2+" "+CREATE_TABLE3+" "+MAKE_FK+" ";
 
     /*    private static final String CREATE_TABLE="CREATE TABLE "+TABLE_NAME+" ( "+UID+" INTEGER PRIMARY KEY AUTOINCREMENT," +
                 " "+NAME+" VARCHAR(255)," +
@@ -130,8 +147,8 @@ public class DuyDatabaseAdapter{
                 db.execSQL(CREATE_TABLE1);
                 db.execSQL(CREATE_TABLE2);
                 db.execSQL(CREATE_TABLE3);
-           //     db.execSQL(MAKE_FK);
-          //      db.execSQL(MAKE_FK2);
+                //     db.execSQL(MAKE_FK);
+                //      db.execSQL(MAKE_FK2);
                 Message.message(context, "Table create");
             } catch (SQLException e) {
                 Message.message(context, "Error on creatation");

@@ -1,6 +1,7 @@
 package example.com.tabs;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
@@ -30,6 +31,7 @@ import java.util.Date;
 */
 public class myCalendar extends android.support.v4.app.Fragment {
     FragmentActivity myContext;
+    //DuyDatabaseAdapter duyHelper;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -98,32 +100,10 @@ public class myCalendar extends android.support.v4.app.Fragment {
 
             @Override
             public void onSelectDate(Date date, View view) {
-                Toast.makeText(getActivity(), formatter.format(date),
-                        Toast.LENGTH_SHORT).show();
+                dateActivity(date, view);
+                /*Toast.makeText(getActivity(), formatter.format(date),
+                        Toast.LENGTH_SHORT).show();*/
 
-            }
-
-            @Override
-            public void onChangeMonth(int month, int year) {
-                String text = "month: " + month + " year: " + year;
-                Toast.makeText(getActivity(), text,
-                        Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onLongClickDate(Date date, View view) {
-                Toast.makeText(getActivity(),
-                        "Long click " + formatter.format(date),
-                        Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onCaldroidViewCreated() {
-                if (caldroidFragment.getLeftArrowButton() != null) {
-                    Toast.makeText(getActivity(),
-                            "Caldroid view is created", Toast.LENGTH_SHORT)
-                            .show();
-                }
             }
 
         };
@@ -138,5 +118,14 @@ public class myCalendar extends android.support.v4.app.Fragment {
     public void onAttach(Activity activity) {
         myContext=(FragmentActivity) activity;
         super.onAttach(activity);
+    }
+
+    public void dateActivity(Date date, View v){
+        final SimpleDateFormat formatter = new SimpleDateFormat("dd MMM yyyy");
+        Intent i = new Intent(getActivity(), dateSelected.class);
+        Bundle args = new Bundle();
+        args.putString("date", formatter.format(date));
+        i.putExtras(args);
+        startActivity(i);
     }
 }

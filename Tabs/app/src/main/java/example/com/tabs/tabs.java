@@ -3,6 +3,7 @@ package example.com.tabs;
 import java.util.Locale;
 
 import android.content.Intent;
+import android.provider.ContactsContract;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -17,7 +18,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class tabs extends ActionBarActivity implements ActionBar.TabListener {
@@ -36,6 +39,7 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
      * The {@link ViewPager} that will host the section contents.
      */
     ViewPager mViewPager;
+    DuyDatabaseAdapter duyHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,6 +93,8 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
                             .setText(mSectionsPagerAdapter.getPageTitle(i))
                             .setTabListener(this));
         }
+
+        duyHelper = new DuyDatabaseAdapter(this);
     }
 
 
@@ -158,10 +164,10 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
                     return myCalendar.newInstance(position + 1);
 
                 case 1:
-                    return Friends.newInstance(position + 1);
+                    return addFriend.newInstance(position + 1);
 
                 case 2:
-                    return Groups.newInstance(position + 1);
+                    return Events.newInstance(position + 1);
 
             }
             // getItem is called to instantiate the fragment for the given page.
@@ -220,6 +226,20 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
             View rootView = inflater.inflate(R.layout.fragment_tabs, container, false);
             return rootView;
         }
+    }
+
+    public void addNewFriend(View viewThis) {
+        // Required empty public constructor
+        EditText editTextUser = (EditText) findViewById(R.id.addFriendName);
+        String userName = editTextUser.getText().toString();
+        long id = duyHelper.insert_friend(userName);
+        ((EditText) findViewById(R.id.addFriendName)).setText("");
+        Toast.makeText(this, userName + " added", Toast.LENGTH_SHORT).show();
+    }
+
+    public void viewFriends(View viewThis){
+        Intent newInt1 = new Intent(this, viewFriends.class);
+        startActivity(newInt1);
     }
 
 }
