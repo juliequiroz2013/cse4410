@@ -36,6 +36,13 @@
                 android:value=".tabs" />
         </activity>
         <activity
+            android:name="example.com.tabs.viewFriends"
+            android:label="@string/title_activity_view_friends" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs" />
+        </activity>
+        <activity
             android:name="example.com.tabs.RegisterFolk"
             android:label="@string/title_activity_register_folk" >
         </activity>

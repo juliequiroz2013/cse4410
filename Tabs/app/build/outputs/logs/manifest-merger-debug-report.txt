@@ -62,18 +62,24 @@ activity#example.com.tabs.About
 ADDED from AndroidManifest.xml:30:9
 	android:name
 		ADDED from AndroidManifest.xml:31:13
-activity#example.com.tabs.RegisterFolk
+activity#example.com.tabs.viewFriends
 ADDED from AndroidManifest.xml:37:9
 	android:label
 		ADDED from AndroidManifest.xml:39:13
 	android:name
 		ADDED from AndroidManifest.xml:38:13
-activity#example.com.tabs.dateSelected
-ADDED from AndroidManifest.xml:42:9
+activity#example.com.tabs.RegisterFolk
+ADDED from AndroidManifest.xml:45:9
 	android:label
-		ADDED from AndroidManifest.xml:44:13
+		ADDED from AndroidManifest.xml:47:13
 	android:name
-		ADDED from AndroidManifest.xml:43:13
+		ADDED from AndroidManifest.xml:46:13
+activity#example.com.tabs.dateSelected
+ADDED from AndroidManifest.xml:50:9
+	android:label
+		ADDED from AndroidManifest.xml:52:13
+	android:name
+		ADDED from AndroidManifest.xml:51:13
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
 MERGED from com.android.support:appcompat-v7:22.1.1:20:5

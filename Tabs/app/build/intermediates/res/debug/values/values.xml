@@ -383,6 +383,7 @@
     <string name="title_activity_date_selected">dateSelected</string>
     <string name="title_activity_login">Login</string>
     <string name="title_activity_register_folk">RegisterFolk</string>
+    <string name="title_activity_view_friends">AddFriends</string>
     <string name="title_section0">My Calendar</string>
     <string name="title_section1">Friends</string>
     <string name="title_section2">Events</string>

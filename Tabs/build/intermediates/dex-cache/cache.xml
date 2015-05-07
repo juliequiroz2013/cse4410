@@ -30,18 +30,18 @@
         <dex dex="D:\David\OneDrive\GitHub\cse4410\Tabs\app\build\intermediates\pre-dexed\debug\classes-3bdd47cc255b200e8276d33d680403ba046b785b.jar" />
     </item>
     <item
-        jar="D:\David\.gradle\caches\modules-2\files-2.1\com.darwinsys\hirondelle-date4j\1.5.1\7b52de513f87ae4d9ff5d17518def0a1e9bc3df0\hirondelle-date4j-1.5.1.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="7b52de513f87ae4d9ff5d17518def0a1e9bc3df0">
-        <dex dex="D:\David\OneDrive\GitHub\cse4410\Tabs\app\build\intermediates\pre-dexed\debug\hirondelle-date4j-1.5.1-803ba118c06ddd69a375952513dcf692b234ce5a.jar" />
-    </item>
-    <item
         jar="D:\David\OneDrive\GitHub\cse4410\Tabs\app\build\intermediates\exploded-aar\com.roomorama\caldroid\2.0.0\classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="3e51d1ca9153cbcec83221e355d070233572df85">
         <dex dex="D:\David\OneDrive\GitHub\cse4410\Tabs\app\build\intermediates\pre-dexed\debug\classes-7f364207a9ffbdb931da6e07c7c146b37718e8b5.jar" />
+    </item>
+    <item
+        jar="D:\David\.gradle\caches\modules-2\files-2.1\com.darwinsys\hirondelle-date4j\1.5.1\7b52de513f87ae4d9ff5d17518def0a1e9bc3df0\hirondelle-date4j-1.5.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7b52de513f87ae4d9ff5d17518def0a1e9bc3df0">
+        <dex dex="D:\David\OneDrive\GitHub\cse4410\Tabs\app\build\intermediates\pre-dexed\debug\hirondelle-date4j-1.5.1-803ba118c06ddd69a375952513dcf692b234ce5a.jar" />
     </item>
 
 </items>
