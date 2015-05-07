@@ -1622,12 +1622,12 @@ containing a value of this type.
     }
     public static final class id {
         public static final int ButtonSendEvent=0x7f0a0059;
-        public static final int Friends=0x7f0a0074;
+        public static final int Friends=0x7f0a0077;
         public static final int Reg_email=0x7f0a005f;
         public static final int Reg_password=0x7f0a0061;
         public static final int ScrollView01=0x7f0a0057;
         public static final int SpinnerTime=0x7f0a0058;
-        public static final int action_about=0x7f0a007b;
+        public static final int action_about=0x7f0a007e;
         public static final int action_bar=0x7f0a0043;
         public static final int action_bar_activity_content=0x7f0a0000;
         public static final int action_bar_container=0x7f0a0042;
@@ -1636,13 +1636,13 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f0a0027;
         public static final int action_bar_title=0x7f0a0026;
         public static final int action_context_bar=0x7f0a0044;
-        public static final int action_logout=0x7f0a007c;
+        public static final int action_logout=0x7f0a007f;
         public static final int action_menu_divider=0x7f0a0002;
         public static final int action_menu_presenter=0x7f0a0003;
         public static final int action_mode_bar=0x7f0a0040;
         public static final int action_mode_bar_stub=0x7f0a003f;
         public static final int action_mode_close_button=0x7f0a0028;
-        public static final int action_settings=0x7f0a007a;
+        public static final int action_settings=0x7f0a007d;
         public static final int activity_chooser_view_content=0x7f0a0029;
         public static final int addFriendButton=0x7f0a0072;
         public static final int addFriendName=0x7f0a0071;
@@ -1658,7 +1658,7 @@ containing a value of this type.
         public static final int calendar_month_year_textview=0x7f0a006b;
         public static final int calendar_right_arrow=0x7f0a006c;
         public static final int calendar_title_view=0x7f0a0069;
-        public static final int calendar_tv=0x7f0a0079;
+        public static final int calendar_tv=0x7f0a007c;
         public static final int checkbox=0x7f0a003b;
         public static final int collapseActionView=0x7f0a001a;
         public static final int contentPanel=0x7f0a0034;
@@ -1691,13 +1691,13 @@ containing a value of this type.
         public static final int input_username=0x7f0a005a;
         public static final int julieName=0x7f0a0056;
         public static final int listMode=0x7f0a000c;
-        public static final int listTextView=0x7f0a0075;
+        public static final int listTextView=0x7f0a0078;
         public static final int list_item=0x7f0a002d;
-        public static final int list_view_friends=0x7f0a0078;
+        public static final int list_view_friends=0x7f0a007b;
         public static final int middle=0x7f0a0018;
         public static final int months_infinite_pager=0x7f0a006e;
         public static final int multiply=0x7f0a0021;
-        public static final int myCalendar=0x7f0a0076;
+        public static final int myCalendar=0x7f0a0079;
         public static final int never=0x7f0a001c;
         public static final int none=0x7f0a0011;
         public static final int normal=0x7f0a000d;
@@ -1706,6 +1706,9 @@ containing a value of this type.
         public static final int progress_circular=0x7f0a0007;
         public static final int progress_horizontal=0x7f0a0008;
         public static final int radio=0x7f0a003d;
+        public static final int removeFriendButton=0x7f0a0076;
+        public static final int removeFriendName=0x7f0a0075;
+        public static final int removeFriendTitle=0x7f0a0074;
         public static final int screen=0x7f0a0022;
         public static final int scrollView=0x7f0a0035;
         public static final int search_badge=0x7f0a0047;
@@ -1718,7 +1721,7 @@ containing a value of this type.
         public static final int search_plate=0x7f0a004b;
         public static final int search_src_text=0x7f0a004c;
         public static final int search_voice_btn=0x7f0a0050;
-        public static final int section_label=0x7f0a0077;
+        public static final int section_label=0x7f0a007a;
         public static final int select_dialog_listview=0x7f0a0051;
         public static final int shortcut=0x7f0a003c;
         public static final int showCustom=0x7f0a0012;

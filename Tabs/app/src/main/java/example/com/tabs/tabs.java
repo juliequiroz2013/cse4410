@@ -242,4 +242,12 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
         startActivity(newInt1);
     }
 
+    public void removeThisFriend(View viewThis) {
+        // Required empty public constructor
+        EditText editTextUser = (EditText) findViewById(R.id.removeFriendName);
+        String userName = editTextUser.getText().toString();
+        ((EditText) findViewById(R.id.addFriendName)).setText("");
+        Toast.makeText(this, "Sweany deleted", Toast.LENGTH_SHORT).show();
+    }
+
 }

@@ -26,7 +26,7 @@
         android:layout_below="@+id/addFriendTitle"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="Friend Name"
+        android:hint="Friend To Add"
         android:textColorHint="@color/white"
         android:layout_centerVertical="true" />
 
@@ -53,8 +53,42 @@
         android:text="View Friends"
         android:textColor="@color/white"
         android:background="@color/dark_green"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="@dimen/padding_about"
         android:layout_centerHorizontal="true"
         android:onClick="viewFriends" />
+
+    <TextView
+        android:id="@+id/removeFriendTitle"
+        android:layout_below="@+id/viewFriendsButton"
+        android:text="Remove Friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_about"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_regular_size" />
+
+    <EditText
+        android:id="@+id/removeFriendName"
+        android:layout_below="@+id/removeFriendTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Friend To Remove"
+        android:textColorHint="@color/dark_red"
+        android:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/removeFriendButton"
+        android:layout_below="@+id/removeFriendName"
+        android:layout_width="wrap_content"
+        android:layout_alignLeft="@+id/addFriendButton"
+        android:layout_alignRight="@+id/addFriendButton"
+        android:layout_height="wrap_content"
+        android:text="remove friend"
+        android:textColor="@color/dark_red"
+        android:background="@color/dark_green"
+        android:layout_marginTop="@dimen/padding_default"
+        android:layout_centerHorizontal="true"
+        android:onClick="removeThisFriend" />
 
 </RelativeLayout>
