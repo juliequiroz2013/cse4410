@@ -2,21 +2,18 @@ package example.com.tabs;
 
 
 import android.app.Activity;
-import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
-import android.widget.Toast;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class addFriend extends Fragment {
+public class Events extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -43,25 +40,22 @@ public class addFriend extends Fragment {
      * @return A new instance of fragment BreakfastFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static Groups newInstance(int sectionNumber) {
-        Groups fragment = new Groups();
+    public static Events newInstance(int sectionNumber) {
+        Events fragment = new Events();
         Bundle args = new Bundle();
         args.putInt(ARG_SECTION_NUMBER, sectionNumber);
         fragment.setArguments(args);
         return fragment;
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_groups, container, false);
+    public Events() {
+        // Required empty public constructor
     }
 
-    /*public void viewFriends(View viewThis){
-        Intent i = new Intent(getActivity(), viewFriends.class);
-        Bundle args = new Bundle();
-        i.putExtras(args);
-        startActivity(i);
-    }*/
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_events, container, false);
+    }
+
 }

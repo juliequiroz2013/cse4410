@@ -4,16 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/dark_green"
-    tools:context="example.com.tabs.FragmentListActivity">
+    tools:context="example.com.tabs.viewFriends">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Fragment Friends" />
+        android:text="View Friends Activity" />
 
     <LinearLayout
-        android:id="@+id/Friends"
+        android:id="@+id/viewFriendsLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical" >
@@ -21,17 +21,14 @@
 
     <!-- text view for list of friends -->
     <TextView
-        android:id="@+id/listTextView"
+        android:id="@+id/friendsTextView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:textSize="25dp"
         android:padding="5dp"
         android:textColor="@color/white"
         android:background="@color/dark_green"
-        android:text="List Text View"
-        android:clickable="true"
-        android:onClick="onListItemClick"
+        android:text="Friends Text View"
         />
 
 </FrameLayout>
-<!-- From: file:/D:/David/OneDrive/GitHub/cse4410/Tabs/app/src/main/res/layout/fragment_friends.xml -->

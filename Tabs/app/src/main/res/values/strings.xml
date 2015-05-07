@@ -21,6 +21,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_login">Login</string>
     <string name="title_activity_register_folk">RegisterFolk</string>
+    <string name="title_activity_date_selected">dateSelected</string>
+    <string name="title_activity_view_friends">Friends List</string>
 
     <!--  group names -->
     <string name="david_name">David Ian Inguanzo Caldera</string>
@@ -28,7 +30,6 @@
     <string name="julie_name">Julie Quiroz</string>
 
     <!-- times -->
-    <string name="title_activity_date_selected">dateSelected</string>
     <string name = "time1">12:00 AM</string>
     <string name = "time2">12:30 AM</string>
     <string name = "time3">1:00 AM</string>

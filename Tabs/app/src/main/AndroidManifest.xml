@@ -35,6 +35,14 @@
         </activity>
 
         <activity
+            android:name=".viewFriends"
+            android:label="@string/title_activity_view_friends" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tabs"/>
+        </activity>
+
+        <activity
             android:name=".RegisterFolk"
             android:label="@string/title_activity_register_folk" >
         </activity>
@@ -43,6 +51,7 @@
             android:name=".dateSelected"
             android:label="@string/title_activity_date_selected" >
         </activity>
+
     </application>
 
 </manifest>

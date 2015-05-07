@@ -35,13 +35,26 @@
         android:layout_below="@+id/addFriendName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_about"
+        android:paddingRight="@dimen/padding_about"
         android:text="add friend"
         android:textColor="@color/white"
         android:background="@color/dark_green"
-        android:paddingLeft="@dimen/padding_default"
-        android:paddingRight="@dimen/padding_default"
         android:layout_marginTop="@dimen/padding_default"
         android:layout_centerHorizontal="true"
         android:onClick="addNewFriend" />
+
+    <Button
+        android:id="@+id/viewFriendsButton"
+        android:layout_below="@+id/addFriendButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_about"
+        android:text="View Friends"
+        android:textColor="@color/white"
+        android:background="@color/dark_green"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="viewFriends" />
 
 </RelativeLayout>

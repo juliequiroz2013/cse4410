@@ -18,6 +18,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -160,10 +161,10 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
                     return myCalendar.newInstance(position + 1);
 
                 case 1:
-                    return Friends.newInstance(position + 1);
+                    return addFriend.newInstance(position + 1);
 
                 case 2:
-                    return Groups.newInstance(position + 1);
+                    return Events.newInstance(position + 1);
 
             }
             // getItem is called to instantiate the fragment for the given page.
@@ -234,13 +235,20 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
         String strName = tView.getText().toString();
         textView.setText(strName);
 
-        setContentView(textView);
+        Toast.makeText(getApplicationContext(), strName, Toast.LENGTH_SHORT).show();
         /*Intent newInt1 = new Intent(this, About.class);
         startActivity(newInt1);*/
     }
 
-    public void addNewFriend(){
-        Toast toast = Toast.makeText(this, "friend added", Toast.LENGTH_SHORT);
-        toast.show();
+    public void addNewFriend(View viewThis) {
+        // Required empty public constructor
+        EditText editTextUser = (EditText) findViewById(R.id.addFriendName);
+        String userName = editTextUser.getText().toString();
+        Toast.makeText(this, userName+" added", Toast.LENGTH_SHORT).show();
+    }
+
+    public void viewFriends(View viewThis){
+        Intent newInt1 = new Intent(this, viewFriends.class);
+        startActivity(newInt1);
     }
 }

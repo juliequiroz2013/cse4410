@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/dark_green"
-    tools:context="example.com.tabs.Friends">
+    tools:context="example.com.tabs.FragmentListActivity">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -30,7 +30,7 @@
         android:background="@color/dark_green"
         android:text="List Text View"
         android:clickable="true"
-        android:onClick="userClick"
+        android:onClick="onListItemClick"
         />
 
 </FrameLayout>
