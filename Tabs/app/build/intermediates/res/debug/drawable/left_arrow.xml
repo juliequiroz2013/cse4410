@@ -3,4 +3,4 @@
     android:src="@drawable/calendar_prev_arrow"
     android:tileMode="disabled" android:gravity="center" >
 </bitmap>
-<!-- From: file:/Users/thomasdao/Documents/workspace/Caldroid/caldroid/src/main/res/drawable/left_arrow.xml --><!-- From: file:/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.roomorama/caldroid/2.0.0/res/drawable/left_arrow.xml -->
+<!-- From: file:/Users/thomasdao/Documents/workspace/Caldroid/caldroid/src/main/res/drawable/left_arrow.xml --><!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/build/intermediates/exploded-aar/com.roomorama/caldroid/2.0.0/res/drawable/left_arrow.xml -->

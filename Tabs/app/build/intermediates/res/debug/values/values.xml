@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/src/main/res/values/arrays.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/src/main/res/values/arrays.xml -->
     <eat-comment/>
     <string-array name="timeList">
         <item>@string/time1</item>
@@ -52,12 +52,12 @@
         <item>@string/time47</item>
         <item>@string/time48</item>
     </string-array>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.roomorama/caldroid/2.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/build/intermediates/exploded-aar/com.roomorama/caldroid/2.0.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="styleCaldroidGridView"/>
     <attr format="reference" name="styleCaldroidLeftArrow"/>
@@ -67,7 +67,7 @@
     <attr format="reference" name="styleCaldroidSquareCell"/>
     <attr format="reference" name="styleCaldroidViewLayout"/>
     <attr format="reference" name="styleCaldroidWeekdayView"/>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="string" name="title"/>
     <bool name="abc_action_bar_embed_tabs">true</bool>
@@ -87,10 +87,10 @@
     <color name="background_floating_material_light">#ffeeeeee</color>
     <color name="background_material_dark">#ff303030</color>
     <color name="background_material_light">#ffeeeeee</color>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="black">#000000</color>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
@@ -100,7 +100,7 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.roomorama/caldroid/2.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/build/intermediates/exploded-aar/com.roomorama/caldroid/2.0.0/res/values/values.xml -->
     <eat-comment/>
     <color name="caldroid_333">#333</color>
     <color name="caldroid_555">#555</color>
@@ -115,14 +115,14 @@
     <color name="caldroid_sky_blue">#FFA3E8F7</color>
     <color name="caldroid_transparent">#00000000</color>
     <color name="caldroid_white">#FFFFFF</color>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="dark_blue">#0099CC</color>
     <color name="dark_green">#669900</color>
     <color name="dark_orange">#FF8800</color>
     <color name="dark_purple">#9933CC</color>
     <color name="dark_red">#CC0000</color>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
@@ -132,7 +132,7 @@
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
     <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light</color>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="light_blue">#33B5E5</color>
     <color name="light_green">#99CC00</color>
@@ -140,7 +140,7 @@
     <color name="light_purple">#AA66CC</color>
     <color name="light_red">#FF4444</color>
     <color name="lighterGreen">#99cc00</color>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="link_text_material_dark">@color/material_deep_teal_200</color>
     <color name="link_text_material_light">@color/material_deep_teal_500</color>
@@ -167,7 +167,7 @@
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="white">#FFFFFF</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="none" value="0"/><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr name="title"/><attr format="string" name="subtitle"/><attr format="reference" name="titleTextStyle"/><attr format="reference" name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr format="reference" name="divider"/><attr format="reference" name="background"/><attr format="reference|color" name="backgroundStacked"/><attr format="reference|color" name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr name="homeAsUpIndicator"/><attr format="dimension" name="itemPadding"/><attr format="boolean" name="hideOnContentScroll"/><attr format="dimension" name="contentInsetStart"/><attr format="dimension" name="contentInsetEnd"/><attr format="dimension" name="contentInsetLeft"/><attr format="dimension" name="contentInsetRight"/><attr format="dimension" name="elevation"/><attr format="reference" name="popupTheme"/></declare-styleable>
@@ -197,7 +197,7 @@
     <declare-styleable name="Toolbar"><attr format="reference" name="titleTextAppearance"/><attr format="reference" name="subtitleTextAppearance"/><attr name="title"/><attr name="subtitle"/><attr name="android:gravity"/><attr format="dimension" name="titleMargins"/><attr format="dimension" name="titleMarginStart"/><attr format="dimension" name="titleMarginEnd"/><attr format="dimension" name="titleMarginTop"/><attr format="dimension" name="titleMarginBottom"/><attr name="contentInsetStart"/><attr name="contentInsetEnd"/><attr name="contentInsetLeft"/><attr name="contentInsetRight"/><attr format="dimension" name="maxButtonHeight"/><attr format="reference" name="collapseIcon"/><attr format="string" name="collapseContentDescription"/><attr name="popupTheme"/><attr format="reference" name="navigationIcon"/><attr format="string" name="navigationContentDescription"/><attr name="android:minHeight"/></declare-styleable>
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/><attr format="reference" name="theme"/><attr name="android:theme"/><attr format="color" name="backgroundTint"/><attr name="backgroundTintMode"><enum name="src_over" value="3"/><enum name="src_in" value="5"/><enum name="src_atop" value="9"/><enum name="multiply" value="14"/><enum name="screen" value="15"/></attr></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
@@ -259,11 +259,11 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
@@ -271,33 +271,33 @@
     <item name="dialog_fixed_width_minor" type="dimen">320dp</item>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="padding_about">25dp</dimen>
     <dimen name="padding_default">16dp</dimen>
     <dimen name="text_about_size">25dp</dimen>
     <dimen name="text_regular_size">20dp</dimen>
     <dimen name="text_title_size">80dp</dimen>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/src/main/res/values/ids.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/src/main/res/values/ids.xml -->
     <eat-comment/>
     <item name="dateSelect" type="id">dateSelect</item>
     <item name="eventName" type="id"/>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <item name="home" type="id"/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
     <item name="split_action_bar" type="id"/>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/src/main/res/values/ids.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/src/main/res/values/ids.xml -->
     <eat-comment/>
     <item name="time" type="id"/>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <item name="up" type="id"/>
     <integer name="abc_config_activityDefaultDur">220</integer>
@@ -320,7 +320,7 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_logout">Log Out</string>
     <string name="action_settings">Settings</string>
@@ -387,19 +387,19 @@
     <string name="title_section1">Friends</string>
     <string name="title_section2">Events</string>
     <string name="username_hint">Username</string>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
             <!-- Customize your theme here. -->
             <item name="actionBarStyle">@style/MyActionBar</item>
     </style>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
@@ -1310,10 +1310,10 @@
         <item name="android:scaleType">center</item>
         <item name="android:background">?attr/selectableItemBackground</item>
     </style>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.roomorama/caldroid/2.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/build/intermediates/exploded-aar/com.roomorama/caldroid/2.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="CaldroidBaseTheme" parent="android:Theme.Light"/>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="CaldroidCustomTheme" parent="CaldroidDefault">
         <item name="styleCaldroidViewLayout">@style/CaldroidCustomThemeCalendarViewLayout</item>
@@ -1339,7 +1339,7 @@
         <item name="android:padding">5dp</item>
     </style>
     <style name="CaldroidCustomThemeSquareCell" parent="CaldroidCustomThemeCell"/>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.roomorama/caldroid/2.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/build/intermediates/exploded-aar/com.roomorama/caldroid/2.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="CaldroidDefault" parent="CaldroidBaseTheme">
         <item name="styleCaldroidViewLayout">@style/CaldroidDefaultCalendarViewLayout</item>
@@ -1425,12 +1425,12 @@
         <item name="android:paddingTop">6dp</item>
         <item name="android:paddingBottom">5dp</item>
     </style>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="MyActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
         <item name="background">@color/dark_green</item>
     </style>
-    <!-- From: file:/Users/Julie/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>

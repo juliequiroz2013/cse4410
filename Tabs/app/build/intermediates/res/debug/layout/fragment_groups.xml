@@ -7,10 +7,6 @@
     tools:context="example.com.tabs.Groups">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Fragment Groups" />
 
 </FrameLayout>
-<!-- From: file:/Users/Julie/cse4410/Tabs/app/src/main/res/layout/fragment_groups.xml -->
+<!-- From: file:/C:/Users/Duy/Documents/GitHub/cse4410/Tabs/app/src/main/res/layout/fragment_groups.xml -->

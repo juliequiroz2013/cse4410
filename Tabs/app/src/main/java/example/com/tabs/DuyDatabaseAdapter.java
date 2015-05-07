@@ -2,6 +2,7 @@ package example.com.tabs;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -63,6 +64,22 @@ public class DuyDatabaseAdapter{
         long id = db.insert(DuyHelper.ONE_EVENT_TABLE,null,contentValues);
         return id;
     }
+
+// Query out to database
+    public String getallfriend(){
+        SQLiteDatabase db = helper.getWritableDatabase();
+        String[] col = {DuyHelper.FRIEND_NAME};
+        Cursor cursor = db.query(DuyHelper.FRIEND_TABLE, col, null, null, null, null, null);
+        StringBuffer buffer = new StringBuffer();
+        while(cursor.moveToNext()){
+            int index1 = cursor.getColumnIndex(DuyHelper.FRIEND_NAME);
+            String name = cursor.getString(index1);
+            buffer.append("Name: "+name+"\n");
+        }
+               return buffer.toString();
+    }
+
+
 
 
 
