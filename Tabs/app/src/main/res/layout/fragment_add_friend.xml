@@ -26,7 +26,11 @@
         android:layout_below="@+id/addFriendTitle"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:hint="Friend To Add"
+=======
+        android:hint="Friend Name"
+>>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
         android:textColorHint="@color/white"
         android:layout_centerVertical="true" />
 
@@ -53,6 +57,7 @@
         android:text="View Friends"
         android:textColor="@color/white"
         android:background="@color/dark_green"
+<<<<<<< HEAD
         android:layout_marginTop="@dimen/padding_about"
         android:layout_centerHorizontal="true"
         android:onClick="viewFriends" />
@@ -91,4 +96,10 @@
         android:layout_centerHorizontal="true"
         android:onClick="removeThisFriend" />
 
+=======
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="viewFriends" />
+
+>>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
 </RelativeLayout>

@@ -39,7 +39,10 @@ public class RegisterFolk extends Activity {
         else{
             Message.message(this,"Insert success");
             Log.d("Duy", "Insert great now yall");
+<<<<<<< HEAD
             finish();
+=======
+>>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
         }
 
 

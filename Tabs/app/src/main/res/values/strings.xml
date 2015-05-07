@@ -22,9 +22,12 @@
     <string name="title_activity_register_folk">RegisterFolk</string>
     <string name="title_activity_view_friends">AddFriends</string>
     <string name="title_activity_date_selected">dateSelected</string>
+<<<<<<< HEAD
     <string name="title_activity_display_event">DisplayEvent</string>
     <string name="title_activity_eventto_friend">EventtoFriend</string>
     <string name="title_activity_link_friend_to_event">LinkFriendToEvent</string>
+=======
+>>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
 
     <!--  group names -->
     <string name="david_name">David Ian Inguanzo Caldera</string>

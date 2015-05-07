@@ -234,6 +234,7 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
         // Required empty public constructor
         EditText editTextUser = (EditText) findViewById(R.id.addFriendName);
         String userName = editTextUser.getText().toString();
+<<<<<<< HEAD
         long id = duyHelper.insert_friend(userName);
         ((EditText) findViewById(R.id.addFriendName)).setText("");
         Toast.makeText(this, userName + " added", Toast.LENGTH_SHORT).show();
@@ -247,10 +248,16 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
         Toast.makeText(this, "Sweany deleted", Toast.LENGTH_SHORT).show();
     }
 
+=======
+        Toast.makeText(this, userName + " added", Toast.LENGTH_SHORT).show();
+    }
+
+>>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
     public void viewFriends(View viewThis){
         Intent newInt1 = new Intent(this, viewFriends.class);
         startActivity(newInt1);
     }
+<<<<<<< HEAD
     public void DisplayAllEventItent(View view){
         Intent newInt1 = new Intent(this, DisplayEvent.class);
         startActivity(newInt1);
@@ -263,5 +270,7 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
         Intent newInt1 = new Intent(this,EventtoFriend.class);
         startActivity(newInt1);
     }
+=======
+>>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
 
 }
