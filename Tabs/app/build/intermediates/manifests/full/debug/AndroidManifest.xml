@@ -50,6 +50,18 @@
             android:name="example.com.tabs.dateSelected"
             android:label="@string/title_activity_date_selected" >
         </activity>
+        <activity
+            android:name="example.com.tabs.DisplayEvent"
+            android:label="@string/title_activity_display_event" >
+        </activity>
+        <activity
+            android:name="example.com.tabs.EventtoFriend"
+            android:label="@string/title_activity_eventto_friend" >
+        </activity>
+        <activity
+            android:name="example.com.tabs.LinkFriendToEvent"
+            android:label="@string/title_activity_link_friend_to_event" >
+        </activity>
     </application>
 
 </manifest>

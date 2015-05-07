@@ -7,6 +7,7 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
+import android.widget.TextView;
 
 /**
  * Created by Duy on 5/1/2015.
@@ -65,29 +66,55 @@ public class DuyDatabaseAdapter{
         return id;
     }
 
-    public String getallfriend(){
+    // Query out to database
+    public String getallfriendDUY(){
         SQLiteDatabase db = helper.getWritableDatabase();
-        String[] col = {DuyHelper.FRIEND_NAME};
+        String[] col = {DuyHelper.UID,DuyHelper.FRIEND_NAME};
         Cursor cursor = db.query(DuyHelper.FRIEND_TABLE, col, null, null, null, null, null);
         StringBuffer buffer = new StringBuffer();
         while(cursor.moveToNext()){
             int index1 = cursor.getColumnIndex(DuyHelper.FRIEND_NAME);
+            int index = cursor.getColumnIndex(DuyHelper.UID);
+            int cid = cursor.getInt(index);
             String name = cursor.getString(index1);
-            buffer.append("Name: "+name+"\n");
+            buffer.append("ID: "+cid+")Name: "+name+"\n");
         }
         return buffer.toString();
     }
 
-    public boolean deleteFriend(String nameToDelete){
+
+    public String getalleventDUY(){
         SQLiteDatabase db = helper.getWritableDatabase();
-        /*String[] col = {DuyHelper.FRIEND_NAME};
-        Cursor cursor = db.query(DuyHelper.FRIEND_TABLE, col, null, null, null, null, null);
+        String[] col = {DuyHelper.UID,DuyHelper.EVENT_NAME,DuyHelper.EVENT_DATE,DuyHelper.EVENT_TIME};
+        Cursor cursor = db.query(DuyHelper.All_EVENT_TABLE, col, null, null, null, null, null);
         StringBuffer buffer = new StringBuffer();
         while(cursor.moveToNext()){
-            int index1 = cursor.getColumnIndex(DuyHelper.FRIEND_NAME);
+
+            int index1 = cursor.getColumnIndex(DuyHelper.EVENT_NAME);
+            int index2 = cursor.getColumnIndex(DuyHelper.EVENT_DATE);
+            int index3 = cursor.getColumnIndex(DuyHelper.EVENT_TIME);
+            int index = cursor.getColumnIndex(DuyHelper.UID);
+            int cid = cursor.getInt(index);
             String name = cursor.getString(index1);
-            buffer.append("Name: "+name+"\n");
-        }*/
+            String dateevent = cursor.getString(index2);
+            String timeevent = cursor.getString(index3);
+            buffer.append("ID: "+cid+")"+name+" on "+dateevent+" at "+timeevent+" \n");
+        }
+        return buffer.toString();
+    }
+
+    public long insert_friend_eventDUY(int fid, int eid){
+        SQLiteDatabase db = helper.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(DuyHelper.FRIEND_NAME_FK, fid);
+        contentValues.put(DuyHelper.EVENT_NAME_FK, eid);
+        long id = db.insert(DuyHelper.ONE_EVENT_TABLE,null,contentValues);
+        return id;
+    }
+
+    public boolean deleteFriend(String nameToDelete){
+        SQLiteDatabase db = helper.getWritableDatabase();
         boolean answer = db.delete(DuyHelper.FRIEND_TABLE, DuyHelper.FRIEND_NAME + " = " + nameToDelete, null) > 0;
         db.close();
         return answer;
@@ -95,13 +122,43 @@ public class DuyDatabaseAdapter{
 
 
 
+
+
+
+
+
+
+    public String geteventinfoDUY(int pid){
+        SQLiteDatabase db = helper.getWritableDatabase();
+        String[] col = {DuyHelper.FRIEND_NAME_FK , DuyHelper.EVENT_NAME_FK};
+        Cursor cursor = db.query(DuyHelper.ONE_EVENT_TABLE, col, DuyHelper.EVENT_NAME_FK + " = "+pid+"", null, null, null, null);
+        StringBuffer buffer = new StringBuffer();
+        buffer.append("Attendees for Event ID: "+pid+" \n");
+        while(cursor.moveToNext()){
+            int index1 = cursor.getColumnIndex(DuyHelper.FRIEND_NAME_FK);
+            int index2 = cursor.getColumnIndex(DuyHelper.EVENT_NAME_FK);
+            String name = cursor.getString(index1);
+            buffer.append("Friend ID:"+name+"\n");
+        }
+        return buffer.toString();
+    }
+
+
+
+
+
+
+
+
+
+
     static class DuyHelper  extends SQLiteOpenHelper {
-        private static final int DATABASE_VERSION= 7;
+        private static final int DATABASE_VERSION= 9;
         private static final String DATABASE_NAME= "Groupal1";
         private static final String FRIEND_TABLE= "friends";
         private static final String All_EVENT_TABLE= "allevent";
         private static final String ONE_EVENT_TABLE= "oneevent";
-
+        private static final String UID= "id";
         //FRIEND TABLE
 
         private static final String FRIEND_NAME="friendname";
@@ -120,12 +177,12 @@ public class DuyDatabaseAdapter{
 
 
 
-        private static final String CREATE_TABLE1="CREATE TABLE "+FRIEND_TABLE+"( id INTEGER PRIMARY KEY AUTOINCREMENT, "+FRIEND_NAME+" VARCHAR(20));";
-        private static final String CREATE_TABLE2="CREATE TABLE "+All_EVENT_TABLE+" ( id INTEGER PRIMARY KEY AUTOINCREMENT, "+EVENT_NAME+" VARCHAR(20), "+EVENT_DATE+" VARCHAR(8),  "+EVENT_TIME+" VARCHAR(4));";
+        private static final String CREATE_TABLE1="CREATE TABLE "+FRIEND_TABLE+"( "+UID+" INTEGER PRIMARY KEY AUTOINCREMENT, "+FRIEND_NAME+" VARCHAR(20));";
+        private static final String CREATE_TABLE2="CREATE TABLE "+All_EVENT_TABLE+" ( "+UID+" INTEGER PRIMARY KEY AUTOINCREMENT, "+EVENT_NAME+" VARCHAR(20), "+EVENT_DATE+" VARCHAR(8),  "+EVENT_TIME+" VARCHAR(4));";
 
-        private static final String CREATE_TABLE3="CREATE TABLE "+ONE_EVENT_TABLE+" ( id INTEGER PRIMARY KEY AUTOINCREMENT, "+EVENT_NAME_FK+" INTEGER, "+FRIEND_NAME_FK+" INTEGER," +
-                " FOREIGN KEY (`"+EVENT_NAME_FK+"`) REFERENCES "+All_EVENT_TABLE+"(id) ON DELETE NO ACTION ON UPDATE CASCADE, " +
-                "FOREIGN KEY (`"+FRIEND_NAME_FK+"`) REFERENCES "+FRIEND_TABLE+"(id) ON DELETE NO ACTION ON UPDATE CASCADE  );";
+        private static final String CREATE_TABLE3="CREATE TABLE "+ONE_EVENT_TABLE+" ( "+UID+" INTEGER PRIMARY KEY AUTOINCREMENT, "+EVENT_NAME_FK+" INTEGER, "+FRIEND_NAME_FK+" INTEGER," +
+                " FOREIGN KEY (`"+EVENT_NAME_FK+"`) REFERENCES "+All_EVENT_TABLE+"("+UID+") ON DELETE NO ACTION ON UPDATE CASCADE, " +
+                "FOREIGN KEY (`"+FRIEND_NAME_FK+"`) REFERENCES "+FRIEND_TABLE+"("+UID+") ON DELETE NO ACTION ON UPDATE CASCADE  );";
 
 
         // private static final String CREATE_INDEX="ALTER TABLE "+ONE_EVENT_TABLE+" CREATE INDEX PINSE

@@ -7,9 +7,36 @@
     tools:context="example.com.tabs.Events">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Fragment Events" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:text="Add Friend To An Event"
+        android:id="@+id/button3"
+        android:layout_gravity="center_horizontal|bottom"
+        android:onClick="FriendToEventIntent"
+        android:clickable="true"
+        android:background="@color/dark_green"
+        android:textColor="@color/white" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:text="View Attendees Of An Event"
+        android:id="@+id/EventPlusFriend"
+        android:layout_gravity="right|center_vertical"
+        android:onClick="EventPlusFriendIntent"
+        android:background="@color/dark_green"
+        android:textColor="@color/white" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:text="List All Event"
+        android:id="@+id/EventDisplay"
+        android:layout_gravity="right|top"
+        android:onClick="DisplayAllEventItent"
+        android:clickable="true"
+        android:background="@color/dark_green"
+        android:textColor="@color/white" />
 </FrameLayout>

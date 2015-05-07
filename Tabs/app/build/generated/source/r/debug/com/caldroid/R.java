@@ -52,21 +52,21 @@ public final class R {
 		public static final int right_arrow = 0x7f020045;
 	}
 	public static final class id {
-		public static final int calendar_gridview = 0x7f0a006f;
-		public static final int calendar_left_arrow = 0x7f0a006a;
-		public static final int calendar_month_year_textview = 0x7f0a006b;
-		public static final int calendar_right_arrow = 0x7f0a006c;
-		public static final int calendar_title_view = 0x7f0a0069;
-		public static final int calendar_tv = 0x7f0a007c;
-		public static final int months_infinite_pager = 0x7f0a006e;
-		public static final int weekday_gridview = 0x7f0a006d;
+		public static final int calendar_gridview = 0x7f0a0085;
+		public static final int calendar_left_arrow = 0x7f0a0080;
+		public static final int calendar_month_year_textview = 0x7f0a0081;
+		public static final int calendar_right_arrow = 0x7f0a0082;
+		public static final int calendar_title_view = 0x7f0a007f;
+		public static final int calendar_tv = 0x7f0a0094;
+		public static final int months_infinite_pager = 0x7f0a0084;
+		public static final int weekday_gridview = 0x7f0a0083;
 	}
 	public static final class layout {
-		public static final int calendar_view = 0x7f04001f;
-		public static final int date_grid_fragment = 0x7f040020;
-		public static final int normal_date_cell = 0x7f040028;
-		public static final int square_date_cell = 0x7f04002c;
-		public static final int weekday_textview = 0x7f04002e;
+		public static final int calendar_view = 0x7f040022;
+		public static final int date_grid_fragment = 0x7f040023;
+		public static final int normal_date_cell = 0x7f04002b;
+		public static final int square_date_cell = 0x7f04002f;
+		public static final int weekday_textview = 0x7f040031;
 	}
 	public static final class string {
 		public static final int app_name = 0x7f0c0013;

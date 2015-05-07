@@ -8,14 +8,14 @@
         android:id="@+id/action_logout"
         android:title="@string/action_logout"
         android:icon="@android:drawable/ic_menu_revert"
-        android:orderInCategory="1"
-        app:showAsAction="ifRoom" />
+        android:orderInCategory="50"
+        app:showAsAction="never" />
     <item
         android:id="@+id/action_about"
         android:title="About"
         android:icon="@android:drawable/ic_menu_info_details"
-        android:orderInCategory="75"
-        app:showAsAction="never" />
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_settings"
         android:title="@string/action_settings"

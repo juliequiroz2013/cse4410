@@ -9,11 +9,32 @@
         <dex dex="D:\David\OneDrive\GitHub\cse4410\Tabs\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-7594e8764781f1cbe1af0b2160314ed6dc110974.jar" />
     </item>
     <item
+        jar="D:\David\OneDrive\Apps\TempUpload\Tabs\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="D:\David\OneDrive\Apps\TempUpload\Tabs\app\build\intermediates\pre-dexed\debug\classes-a9550a21264c1ae64694815fabfd72868717ab11.jar" />
+    </item>
+    <item
         jar="C:\Program Files\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
-        <dex dex="D:\David\OneDrive\GitHub\cse4410\Tabs\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-73915877a018e74bd2547dd9838cd67ae15fb58f.jar" />
+        <dex dex="D:\David\OneDrive\Apps\TempUpload\Tabs\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-73915877a018e74bd2547dd9838cd67ae15fb58f.jar" />
+    </item>
+    <item
+        jar="D:\David\OneDrive\Apps\TempUpload\Tabs\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\libs\internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="D:\David\OneDrive\Apps\TempUpload\Tabs\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-33ab4a9d73e77aec803a387d482a08d785be4620.jar" />
+    </item>
+    <item
+        jar="D:\David\OneDrive\Apps\TempUpload\Tabs\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="D:\David\OneDrive\Apps\TempUpload\Tabs\app\build\intermediates\pre-dexed\debug\classes-5229ed4e76da4fa3b23a1d5068fd496323862767.jar" />
     </item>
     <item
         jar="D:\David\OneDrive\GitHub\cse4410\Tabs\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\classes.jar"
@@ -30,18 +51,25 @@
         <dex dex="D:\David\OneDrive\GitHub\cse4410\Tabs\app\build\intermediates\pre-dexed\debug\classes-3bdd47cc255b200e8276d33d680403ba046b785b.jar" />
     </item>
     <item
-        jar="D:\David\OneDrive\GitHub\cse4410\Tabs\app\build\intermediates\exploded-aar\com.roomorama\caldroid\2.0.0\classes.jar"
+        jar="D:\David\OneDrive\Apps\TempUpload\Tabs\app\build\intermediates\exploded-aar\com.roomorama\caldroid\2.0.0\classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="3e51d1ca9153cbcec83221e355d070233572df85">
-        <dex dex="D:\David\OneDrive\GitHub\cse4410\Tabs\app\build\intermediates\pre-dexed\debug\classes-7f364207a9ffbdb931da6e07c7c146b37718e8b5.jar" />
+        <dex dex="D:\David\OneDrive\Apps\TempUpload\Tabs\app\build\intermediates\pre-dexed\debug\classes-67fa02753149e7622dd7e40d0a46339ad7fd4632.jar" />
     </item>
     <item
         jar="D:\David\.gradle\caches\modules-2\files-2.1\com.darwinsys\hirondelle-date4j\1.5.1\7b52de513f87ae4d9ff5d17518def0a1e9bc3df0\hirondelle-date4j-1.5.1.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="7b52de513f87ae4d9ff5d17518def0a1e9bc3df0">
-        <dex dex="D:\David\OneDrive\GitHub\cse4410\Tabs\app\build\intermediates\pre-dexed\debug\hirondelle-date4j-1.5.1-803ba118c06ddd69a375952513dcf692b234ce5a.jar" />
+        <dex dex="D:\David\OneDrive\Apps\TempUpload\Tabs\app\build\intermediates\pre-dexed\debug\hirondelle-date4j-1.5.1-803ba118c06ddd69a375952513dcf692b234ce5a.jar" />
+    </item>
+    <item
+        jar="D:\David\OneDrive\GitHub\cse4410\Tabs\app\build\intermediates\exploded-aar\com.roomorama\caldroid\2.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3e51d1ca9153cbcec83221e355d070233572df85">
+        <dex dex="D:\David\OneDrive\GitHub\cse4410\Tabs\app\build\intermediates\pre-dexed\debug\classes-7f364207a9ffbdb931da6e07c7c146b37718e8b5.jar" />
     </item>
 
 </items>

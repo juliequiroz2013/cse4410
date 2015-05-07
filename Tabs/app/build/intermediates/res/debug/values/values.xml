@@ -381,6 +381,9 @@
     <string name="time8">3:30 AM</string>
     <string name="time9">4:00 AM</string>
     <string name="title_activity_date_selected">dateSelected</string>
+    <string name="title_activity_display_event">DisplayEvent</string>
+    <string name="title_activity_eventto_friend">EventtoFriend</string>
+    <string name="title_activity_link_friend_to_event">LinkFriendToEvent</string>
     <string name="title_activity_login">Login</string>
     <string name="title_activity_register_folk">RegisterFolk</string>
     <string name="title_activity_view_friends">AddFriends</string>
