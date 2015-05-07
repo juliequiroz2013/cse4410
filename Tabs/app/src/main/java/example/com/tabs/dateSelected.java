@@ -57,13 +57,13 @@ public class dateSelected extends Activity {
     public void sendEvent(View button){
         //do click handling here
         final EditText eventField = (EditText) findViewById(R.id.eventName);
-        String name = eventField.getText().toString();
+        String eventName = eventField.getText().toString();
 
         final Spinner timeSpinner = (Spinner) findViewById(R.id.SpinnerTime);
-        String timeType = timeSpinner.getSelectedItem().toString();
+        String time = timeSpinner.getSelectedItem().toString();
 
-//        final EditText feedbackField = (EditText) findViewById(R.id.EditTextFeedbackBody);
-//        String feedback = feedbackField.getText().toString();
+        //Query the event inserts here
+
         Toast.makeText(getApplicationContext(), "Event Added!", Toast.LENGTH_SHORT).show();
         finish();
     }
