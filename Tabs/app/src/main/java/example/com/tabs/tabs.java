@@ -94,7 +94,9 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
                             .setTabListener(this));
         }
 
+
         duyHelper = new DuyDatabaseAdapter(this);
+
     }
 
 
@@ -239,6 +241,18 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
 
     public void viewFriends(View viewThis){
         Intent newInt1 = new Intent(this, viewFriends.class);
+        startActivity(newInt1);
+    }
+    public void DisplayAllEventItent(View view){
+        Intent newInt1 = new Intent(this, DisplayEvent.class);
+        startActivity(newInt1);
+    }
+    public void FriendToEventIntent (View view){
+        Intent newInt1 = new Intent(this, LinkFriendToEvent.class);
+        startActivity(newInt1);
+    }
+    public void EventPlusFriendIntent (View view){
+        Intent newInt1 = new Intent(this,EventtoFriend.class);
         startActivity(newInt1);
     }
 

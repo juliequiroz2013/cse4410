@@ -76,6 +76,9 @@
     <string name = "time46">10:30 PM</string>
     <string name = "time47">11:00 PM</string>
     <string name = "time48">11:30 PM</string>
+    <string name="title_activity_display_event">DisplayEvent</string>
+    <string name="title_activity_eventto_friend">EventtoFriend</string>
+    <string name="title_activity_link_friend_to_event">LinkFriendToEvent</string>
 
 
 </resources>

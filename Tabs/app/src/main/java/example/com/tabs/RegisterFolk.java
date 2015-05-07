@@ -50,7 +50,7 @@ public class RegisterFolk extends Activity {
 
     }
         public void printdatabase(){
-        String data = duyHelper.getallfriend();
+        String data = duyHelper.getallfriendDUY();
         showfriend.setText(data);
 
     }
