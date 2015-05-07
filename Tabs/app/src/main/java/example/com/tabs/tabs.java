@@ -39,6 +39,7 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
      * The {@link ViewPager} that will host the section contents.
      */
     ViewPager mViewPager;
+    DuyDatabaseAdapter duyHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,6 +93,8 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
                             .setText(mSectionsPagerAdapter.getPageTitle(i))
                             .setTabListener(this));
         }
+
+        duyHelper = new DuyDatabaseAdapter(this);
     }
 
 
@@ -229,6 +232,8 @@ public class tabs extends ActionBarActivity implements ActionBar.TabListener {
         // Required empty public constructor
         EditText editTextUser = (EditText) findViewById(R.id.addFriendName);
         String userName = editTextUser.getText().toString();
+        long id = duyHelper.insert_friend(userName);
+        ((EditText) findViewById(R.id.addFriendName)).setText("");
         Toast.makeText(this, userName + " added", Toast.LENGTH_SHORT).show();
     }
 
