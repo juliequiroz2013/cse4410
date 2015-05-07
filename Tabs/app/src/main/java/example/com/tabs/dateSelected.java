@@ -62,7 +62,7 @@ public class dateSelected extends Activity {
         final Spinner timeSpinner = (Spinner) findViewById(R.id.SpinnerTime);
         String time = timeSpinner.getSelectedItem().toString();
 
-        //Query the event inserts here
+        //event insert here
 
         Toast.makeText(getApplicationContext(), "Event Added!", Toast.LENGTH_SHORT).show();
         finish();
