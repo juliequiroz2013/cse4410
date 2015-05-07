@@ -22,7 +22,6 @@ public class RegisterFolk extends Activity {
         setContentView(R.layout.activity_register_folk);
 
         user_name= (EditText) findViewById(R.id.Reg_email);
-        password=(EditText) findViewById(R.id.Reg_password);
 
         duyHelper = new DuyDatabaseAdapter(this);
 
@@ -31,16 +30,15 @@ public class RegisterFolk extends Activity {
 
     public void addUser(View v){
         String user =  user_name.getText().toString();
-        String pass = password.getText().toString();
 
-        long id = duyHelper.insertData(user, pass);
+        long id = duyHelper.insert_friend(user);
         if(id<0){
             Message.message(this,"Insert was not success");
-            Log.d("Duy", "Nope");
+            Log.d("Duy", "Not able to insert");
         }
         else{
             Message.message(this,"Insert success");
-            Log.d("Duy", "Hell Yeah");
+            Log.d("Duy", "Insert great now yall");
         }
 
 
