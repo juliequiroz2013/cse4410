@@ -2,10 +2,7 @@ package example.com.tabs;
 
 
 import android.app.Activity;
-<<<<<<< HEAD
 import android.content.Intent;
-=======
->>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -62,9 +59,6 @@ public class Events extends Fragment {
         return inflater.inflate(R.layout.fragment_events, container, false);
     }
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
 }

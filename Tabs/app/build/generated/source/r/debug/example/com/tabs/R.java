@@ -1623,7 +1623,6 @@ containing a value of this type.
     public static final class id {
         public static final int AFE=0x7f0a006d;
         public static final int ButtonSendEvent=0x7f0a0059;
-<<<<<<< HEAD
         public static final int DeleteEvent=0x7f0a005a;
         public static final int EventDisplay=0x7f0a005c;
         public static final int EventDisplayLink=0x7f0a006a;
@@ -1641,14 +1640,6 @@ containing a value of this type.
         public static final int ScrollView01=0x7f0a0057;
         public static final int SpinnerTime=0x7f0a0058;
         public static final int action_about=0x7f0a0096;
-=======
-        public static final int Friends=0x7f0a0074;
-        public static final int Reg_email=0x7f0a005f;
-        public static final int Reg_password=0x7f0a0061;
-        public static final int ScrollView01=0x7f0a0057;
-        public static final int SpinnerTime=0x7f0a0058;
-        public static final int action_about=0x7f0a007a;
->>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
         public static final int action_bar=0x7f0a0043;
         public static final int action_bar_activity_content=0x7f0a0000;
         public static final int action_bar_container=0x7f0a0042;
@@ -1657,29 +1648,17 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f0a0027;
         public static final int action_bar_title=0x7f0a0026;
         public static final int action_context_bar=0x7f0a0044;
-<<<<<<< HEAD
         public static final int action_logout=0x7f0a0097;
-=======
-        public static final int action_logout=0x7f0a007b;
->>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
         public static final int action_menu_divider=0x7f0a0002;
         public static final int action_menu_presenter=0x7f0a0003;
         public static final int action_mode_bar=0x7f0a0040;
         public static final int action_mode_bar_stub=0x7f0a003f;
         public static final int action_mode_close_button=0x7f0a0028;
-<<<<<<< HEAD
         public static final int action_settings=0x7f0a0095;
         public static final int activity_chooser_view_content=0x7f0a0029;
         public static final int addFriendButton=0x7f0a0088;
         public static final int addFriendName=0x7f0a0087;
         public static final int addFriendTitle=0x7f0a0086;
-=======
-        public static final int action_settings=0x7f0a0079;
-        public static final int activity_chooser_view_content=0x7f0a0029;
-        public static final int addFriendButton=0x7f0a0072;
-        public static final int addFriendName=0x7f0a0071;
-        public static final int addFriendTitle=0x7f0a0070;
->>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
         public static final int alertTitle=0x7f0a0033;
         public static final int always=0x7f0a0019;
         public static final int beginning=0x7f0a0016;
@@ -1687,7 +1666,6 @@ containing a value of this type.
         public static final int button2=0x7f0a0065;
         public static final int button3=0x7f0a008d;
         public static final int buttonPanel=0x7f0a0039;
-<<<<<<< HEAD
         public static final int buttonRegister=0x7f0a0073;
         public static final int calendar_gridview=0x7f0a0085;
         public static final int calendar_left_arrow=0x7f0a0080;
@@ -1695,15 +1673,6 @@ containing a value of this type.
         public static final int calendar_right_arrow=0x7f0a0082;
         public static final int calendar_title_view=0x7f0a007f;
         public static final int calendar_tv=0x7f0a0094;
-=======
-        public static final int buttonRegister=0x7f0a005d;
-        public static final int calendar_gridview=0x7f0a006f;
-        public static final int calendar_left_arrow=0x7f0a006a;
-        public static final int calendar_month_year_textview=0x7f0a006b;
-        public static final int calendar_right_arrow=0x7f0a006c;
-        public static final int calendar_title_view=0x7f0a0069;
-        public static final int calendar_tv=0x7f0a0078;
->>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
         public static final int checkbox=0x7f0a003b;
         public static final int collapseActionView=0x7f0a001a;
         public static final int contentPanel=0x7f0a0034;
@@ -1726,11 +1695,7 @@ containing a value of this type.
         public static final int eventName=0x7f0a0005;
         public static final int expand_activities_button=0x7f0a002a;
         public static final int expanded_menu=0x7f0a003a;
-<<<<<<< HEAD
         public static final int friendsTextView=0x7f0a007e;
-=======
-        public static final int friendsTextView=0x7f0a0068;
->>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
         public static final int groupalName=0x7f0a0052;
         public static final int home=0x7f0a0006;
         public static final int homeAsUp=0x7f0a0010;
@@ -1741,23 +1706,13 @@ containing a value of this type.
         public static final int input_username=0x7f0a0070;
         public static final int julieName=0x7f0a0056;
         public static final int listMode=0x7f0a000c;
-<<<<<<< HEAD
         public static final int listTextView=0x7f0a0090;
-=======
-        public static final int listTextView=0x7f0a0075;
->>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
         public static final int list_item=0x7f0a002d;
         public static final int list_view_friends=0x7f0a0093;
         public static final int middle=0x7f0a0018;
-<<<<<<< HEAD
         public static final int months_infinite_pager=0x7f0a0084;
         public static final int multiply=0x7f0a0021;
         public static final int myCalendar=0x7f0a0091;
-=======
-        public static final int months_infinite_pager=0x7f0a006e;
-        public static final int multiply=0x7f0a0021;
-        public static final int myCalendar=0x7f0a0076;
->>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
         public static final int never=0x7f0a001c;
         public static final int none=0x7f0a0011;
         public static final int normal=0x7f0a000d;
@@ -1781,11 +1736,7 @@ containing a value of this type.
         public static final int search_plate=0x7f0a004b;
         public static final int search_src_text=0x7f0a004c;
         public static final int search_voice_btn=0x7f0a0050;
-<<<<<<< HEAD
         public static final int section_label=0x7f0a0092;
-=======
-        public static final int section_label=0x7f0a0077;
->>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
         public static final int select_dialog_listview=0x7f0a0051;
         public static final int shortcut=0x7f0a003c;
         public static final int showCustom=0x7f0a0012;
@@ -1816,16 +1767,10 @@ containing a value of this type.
         public static final int topPanel=0x7f0a0031;
         public static final int up=0x7f0a000b;
         public static final int useLogo=0x7f0a0015;
-<<<<<<< HEAD
         public static final int viewFriendsButton=0x7f0a0089;
         public static final int viewFriendsLayout=0x7f0a007d;
         public static final int vieweverybody=0x7f0a0062;
         public static final int weekday_gridview=0x7f0a0083;
-=======
-        public static final int viewFriendsButton=0x7f0a0073;
-        public static final int viewFriendsLayout=0x7f0a0067;
-        public static final int weekday_gridview=0x7f0a006d;
->>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
         public static final int withText=0x7f0a001d;
         public static final int wrap_content=0x7f0a0020;
     }
@@ -1862,7 +1807,6 @@ containing a value of this type.
         public static final int abc_simple_dropdown_hint=0x7f040018;
         public static final int activity_about=0x7f040019;
         public static final int activity_date_selected=0x7f04001a;
-<<<<<<< HEAD
         public static final int activity_display_event=0x7f04001b;
         public static final int activity_eventto_friend=0x7f04001c;
         public static final int activity_link_friend_to_event=0x7f04001d;
@@ -1886,27 +1830,6 @@ containing a value of this type.
         public static final int square_date_cell=0x7f04002f;
         public static final int support_simple_spinner_dropdown_item=0x7f040030;
         public static final int weekday_textview=0x7f040031;
-=======
-        public static final int activity_login=0x7f04001b;
-        public static final int activity_register_folk=0x7f04001c;
-        public static final int activity_tabs=0x7f04001d;
-        public static final int activity_view_friends=0x7f04001e;
-        public static final int calendar_view=0x7f04001f;
-        public static final int date_grid_fragment=0x7f040020;
-        public static final int fragment_add_friend=0x7f040021;
-        public static final int fragment_events=0x7f040022;
-        public static final int fragment_friends=0x7f040023;
-        public static final int fragment_groups=0x7f040024;
-        public static final int fragment_my_calendar=0x7f040025;
-        public static final int fragment_tabs=0x7f040026;
-        public static final int normal_date_cell=0x7f040027;
-        public static final int select_dialog_item_material=0x7f040028;
-        public static final int select_dialog_multichoice_material=0x7f040029;
-        public static final int select_dialog_singlechoice_material=0x7f04002a;
-        public static final int square_date_cell=0x7f04002b;
-        public static final int support_simple_spinner_dropdown_item=0x7f04002c;
-        public static final int weekday_textview=0x7f04002d;
->>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
     }
     public static final class menu {
         public static final int menu_date_selected=0x7f0e0000;
@@ -1994,7 +1917,6 @@ containing a value of this type.
         public static final int time8=0x7f0c0049;
         public static final int time9=0x7f0c004a;
         public static final int title_activity_date_selected=0x7f0c004b;
-<<<<<<< HEAD
         public static final int title_activity_display_event=0x7f0c004c;
         public static final int title_activity_eventto_friend=0x7f0c004d;
         public static final int title_activity_link_friend_to_event=0x7f0c004e;
@@ -2005,15 +1927,6 @@ containing a value of this type.
         public static final int title_section1=0x7f0c0053;
         public static final int title_section2=0x7f0c0054;
         public static final int username_hint=0x7f0c0055;
-=======
-        public static final int title_activity_login=0x7f0c004c;
-        public static final int title_activity_register_folk=0x7f0c004d;
-        public static final int title_activity_view_friends=0x7f0c004e;
-        public static final int title_section0=0x7f0c004f;
-        public static final int title_section1=0x7f0c0050;
-        public static final int title_section2=0x7f0c0051;
-        public static final int username_hint=0x7f0c0052;
->>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f0d0000;

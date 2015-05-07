@@ -33,7 +33,6 @@ public class DuyDatabaseAdapter{
     public long insert_friend(String name){
         Log.d("Duy", "Enter insert function");
         Log.d("Duy", "Enter insert function "+name +"");
-<<<<<<< HEAD
         SQLiteDatabase db = helper.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
@@ -64,20 +63,9 @@ public class DuyDatabaseAdapter{
         contentValues.put(DuyHelper.EVENT_NAME_FK, event_id);
         contentValues.put(DuyHelper.FRIEND_NAME_FK, friend_id);
         long id = db.insert(DuyHelper.ONE_EVENT_TABLE,null,contentValues);
-=======
-        SQLiteDatabase db = helper.getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
-
-        contentValues.put(DuyHelper.FRIEND_NAME, name);
-        long id = db.insert(DuyHelper.FRIEND_TABLE,null,contentValues);
-
-        Log.d("Duy", "Exist insert function");
->>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
         return id;
-
     }
 
-<<<<<<< HEAD
     // Query out to database
     public String getallfriendDUY(){
         SQLiteDatabase db = helper.getWritableDatabase();
@@ -159,47 +147,18 @@ public class DuyDatabaseAdapter{
 
 
 
-=======
-    public long insert_event(String name, String date, String time){
-        SQLiteDatabase db = helper.getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
->>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
-
-        contentValues.put(DuyHelper.EVENT_NAME, name);
-        contentValues.put(DuyHelper.EVENT_DATE, date);
-        contentValues.put(DuyHelper.EVENT_TIME, time);
-        long id = db.insert(DuyHelper.All_EVENT_TABLE,null,contentValues);
-        return id;
-    }
 
 
-    public long insert_link_EventFriend (int friend_id, int event_id){
-        SQLiteDatabase db = helper.getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
-
-        contentValues.put(DuyHelper.EVENT_NAME_FK, event_id);
-        contentValues.put(DuyHelper.FRIEND_NAME_FK, friend_id);
-        long id = db.insert(DuyHelper.ONE_EVENT_TABLE,null,contentValues);
-        return id;
-    }
 
 
 
     static class DuyHelper  extends SQLiteOpenHelper {
-<<<<<<< HEAD
         private static final int DATABASE_VERSION= 9;
-=======
-        private static final int DATABASE_VERSION= 7;
->>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
         private static final String DATABASE_NAME= "Groupal1";
         private static final String FRIEND_TABLE= "friends";
         private static final String All_EVENT_TABLE= "allevent";
         private static final String ONE_EVENT_TABLE= "oneevent";
-<<<<<<< HEAD
         private static final String UID= "id";
-=======
-
->>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
         //FRIEND TABLE
 
         private static final String FRIEND_NAME="friendname";
@@ -218,21 +177,12 @@ public class DuyDatabaseAdapter{
 
 
 
-<<<<<<< HEAD
         private static final String CREATE_TABLE1="CREATE TABLE "+FRIEND_TABLE+"( "+UID+" INTEGER PRIMARY KEY AUTOINCREMENT, "+FRIEND_NAME+" VARCHAR(20));";
         private static final String CREATE_TABLE2="CREATE TABLE "+All_EVENT_TABLE+" ( "+UID+" INTEGER PRIMARY KEY AUTOINCREMENT, "+EVENT_NAME+" VARCHAR(20), "+EVENT_DATE+" VARCHAR(8),  "+EVENT_TIME+" VARCHAR(4));";
 
         private static final String CREATE_TABLE3="CREATE TABLE "+ONE_EVENT_TABLE+" ( "+UID+" INTEGER PRIMARY KEY AUTOINCREMENT, "+EVENT_NAME_FK+" INTEGER, "+FRIEND_NAME_FK+" INTEGER," +
                 " FOREIGN KEY (`"+EVENT_NAME_FK+"`) REFERENCES "+All_EVENT_TABLE+"("+UID+") ON DELETE NO ACTION ON UPDATE CASCADE, " +
                 "FOREIGN KEY (`"+FRIEND_NAME_FK+"`) REFERENCES "+FRIEND_TABLE+"("+UID+") ON DELETE NO ACTION ON UPDATE CASCADE  );";
-=======
-        private static final String CREATE_TABLE1="CREATE TABLE "+FRIEND_TABLE+"( id INTEGER PRIMARY KEY AUTOINCREMENT, "+FRIEND_NAME+" VARCHAR(20));";
-        private static final String CREATE_TABLE2="CREATE TABLE "+All_EVENT_TABLE+" ( id INTEGER PRIMARY KEY AUTOINCREMENT, "+EVENT_NAME+" VARCHAR(20), "+EVENT_DATE+" VARCHAR(8),  "+EVENT_TIME+" VARCHAR(4));";
-
-        private static final String CREATE_TABLE3="CREATE TABLE "+ONE_EVENT_TABLE+" ( id INTEGER PRIMARY KEY AUTOINCREMENT, "+EVENT_NAME_FK+" INTEGER, "+FRIEND_NAME_FK+" INTEGER," +
-                " FOREIGN KEY (`"+EVENT_NAME_FK+"`) REFERENCES "+All_EVENT_TABLE+"(id) ON DELETE NO ACTION ON UPDATE CASCADE, " +
-                "FOREIGN KEY (`"+FRIEND_NAME_FK+"`) REFERENCES "+FRIEND_TABLE+"(id) ON DELETE NO ACTION ON UPDATE CASCADE  );";
->>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
 
 
         // private static final String CREATE_INDEX="ALTER TABLE "+ONE_EVENT_TABLE+" CREATE INDEX PINSE

@@ -1,7 +1,6 @@
 package example.com.tabs;
 
 import android.app.Activity;
-<<<<<<< HEAD
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -14,32 +13,20 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-=======
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.EditText;
-import android.widget.TextView;
-
->>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
 /**
  * Created by David on 5/6/2015.
  */
 public class viewFriends extends Activity{
-<<<<<<< HEAD
     DuyDatabaseAdapter duyHelper;
     String allMyFriends = "";
     ListView friendListView;
     ArrayList<String> friendArrayList;
     ArrayAdapter<String> friendArrayAdapter;
 
-=======
->>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_friends);
-<<<<<<< HEAD
 
         duyHelper = new DuyDatabaseAdapter(this);
         friendListView = (ListView) findViewById(R.id.list_view_friends);
@@ -49,8 +36,6 @@ public class viewFriends extends Activity{
         TextView friendsText = (TextView) findViewById(R.id.friendsTextView);
         friendsText.setText(allMyFriends);*/
         displayAllFriends();
-=======
->>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
     }
 
     @Override
@@ -74,7 +59,6 @@ public class viewFriends extends Activity{
 
         return super.onOptionsItemSelected(item);
     }
-<<<<<<< HEAD
 
     public void displayAllFriends () {
         //TextView friendsText = (TextView) findViewById(R.id.friendsTextView);
@@ -98,6 +82,4 @@ public class viewFriends extends Activity{
         //friendArrayAdapter = new ArrayAdapter<String>(this, R.layout.activity_view_friends, friendArrayList);
         //friendListView.setAdapter(friendArrayAdapter);
     }
-=======
->>>>>>> 956e851f51bf70132ba79da5a2cf117002365277
 }
